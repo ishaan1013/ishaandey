@@ -5,6 +5,7 @@ import Navbar from '../components/navbar'
 import Blob from '../components/blob'
 import SwitchSubtitle from '../components/landing/switchSubtitle'
 import {BsArrowDown} from 'react-icons/bs'
+import About from "../components/about"
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
 
       <Navbar/>
         
-      <div className={styles.container}>
+      <div className="container">
         
         <main className={styles.main}>
           <Blob/>
@@ -30,12 +31,15 @@ export default function Home() {
           {/* </div> */}
 
           <div className={styles.learnmore}>
+          {/* <div className="learnmore"> */}
             <p>Learn More</p>
             <div>
               <BsArrowDown/>
             </div>
           </div>
         </main>
+        <About/>
+        
       </div>
     </>
   )
