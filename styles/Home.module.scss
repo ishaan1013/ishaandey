@@ -132,23 +132,31 @@
         margin: 0 2em 0 0;
         font-size: 1.4rem;
         font-weight: 600;
-        color: #131313;
         cursor: pointer;
+        transform: translate(0, 0px);
+        transition: all 0.3s; 
       }
       a:hover {
-        color: transparent;
-        -webkit-text-stroke: 1px #131313;
+        transition: all 0.1s; 
+        transform: translate(0, 2px);
       }
       div {
         position: relative;
-        div {
+        margin: 0;
+        .copyText {
+          cursor: default;
+          user-select: none;
           text-align: center;
           width: 100%;
           position: absolute;
           left: 0;
           top: 40px;
+          
+          background: -webkit-linear-gradient(0deg, rgba(135,202,217,1) 0%, rgba(161,105,178,1) 100%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: 400;
         }
       }
     }

@@ -10,11 +10,16 @@ function useHover() {
   return [hovering, onHoverProps]
 }
 
-
-
 export default function About() {
     const [textIsHovering, textHoverProps] = useHover()
     const [copy, setCopy] = useState(false)
+
+    function copyHandler() {
+        setCopy(true)
+        setTimeout(() => {
+            setCopy(false)
+         }, 3000)
+    }
 
     return (
         <section className={styles.about}>
@@ -45,16 +50,16 @@ export default function About() {
                         >
                             INSTAGRAM
                         </a>
-                        <div 
-                        {...textHoverProps}
-                        onClick={() => {
-                            navigator.clipboard.writeText("Aero#9241");
-                            
-                        }}
-                        >
-                            {textIsHovering ? "Aero#9241" : "DISCORD"}
-                            <div>
-                                test
+                        <div>
+                            <div 
+                            {...textHoverProps}
+                            onClick={() => {
+                                navigator.clipboard.writeText("Aero#9241");
+                                copyHandler()
+                            }}
+                            >{textIsHovering ? "Aero#9241" : "DISCORD"}</div>
+                            <div className={styles.copyText}>
+                                {copy ? "Copied!" : ""}
                             </div>
                         </div>
                     </div>
