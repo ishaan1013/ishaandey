@@ -13,19 +13,14 @@ class SwitchSubtitle extends Component {
   
     componentDidMount() {
       this.timer = setInterval(() => {
-        this.setState(({stitles, index}) => {
-          index = (index + 1) % stitles.length
-          return {
-            index
-          }
-        })
+        this.setState({index: this.state.index + 1})
       }, 3500)
     }
   
     render() {
       const { index, stitles } = this.state;
       return(
-          <p>{stitles[index]}</p>
+          <p>{stitles[index % 2]}</p>
       );
     }
 }

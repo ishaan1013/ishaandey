@@ -31,7 +31,6 @@ export default function Home() {
           {/* </div> */}
 
           <div className={styles.learnmore}>
-          {/* <div className="learnmore"> */}
             <p>Learn More</p>
             <div>
               <BsArrowDown/>

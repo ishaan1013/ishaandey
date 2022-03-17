@@ -209,10 +209,18 @@ nav {
       list-style-type: none;
       display:inline-block;
       margin: 0 2em;
-      a {
+
+      transform: translate(0, 0px);
+      transition: all 0.3s; 
+
+      &:hover {
+        transition: all 0.1s; 
+        transform: translate(0, 2px);
+      }
+
+      * {
         background-color: transparent;
         font-size: 1.2rem;
-        
       }
     }
   }
