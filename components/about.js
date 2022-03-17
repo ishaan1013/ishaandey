@@ -21,6 +21,18 @@ export default function About() {
          }, 3000)
     }
 
+    function CopyText() {
+        if (copy) {
+            return "Copied!"
+        }
+        else {
+            if (textIsHovering) {
+                return "Click To Copy"
+            }
+        }
+        return ""
+    }
+
     return (
         <section className={styles.about}>
             <div className={styles.abtFlex}>
@@ -59,7 +71,7 @@ export default function About() {
                             }}
                             >{textIsHovering ? "Aero#9241" : "DISCORD"}</div>
                             <div className={styles.copyText}>
-                                {copy ? "Copied!" : ""}
+                                <CopyText/>
                             </div>
                         </div>
                     </div>
