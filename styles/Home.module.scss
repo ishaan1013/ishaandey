@@ -42,7 +42,6 @@
   margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 5rem;
-  user-select: none;
   
 
   span {
@@ -93,11 +92,56 @@
 
 .about {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
+  overflow-y: hidden;
+  overflow-x: visible;
+  margin-top: 100px;
 
   background: rgb(255,255,255);
   background: -moz-linear-gradient(0deg, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0) 100%);
   background: -webkit-linear-gradient(0deg, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0) 100%);
   background: linear-gradient(0deg, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+
+  .abtFlex {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between
+  }
+
+  .left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+
+    div {
+      font-size: 1.2rem;
+      line-height: 1.5em;
+    }
+  }
+
+  .right {
+    width: 50px;
+  }
+
+  .trackRotate {
+    transform: rotate(90deg);
+  }
+
+  .track {
+    white-space: nowrap;
+    will-change: transform;
+    animation: inf-track 15s linear infinite;
+
+    div {
+      font-size: 1.2rem;
+      user-select: none;
+    }
+  }
+}
+
+@keyframes inf-track {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(-3000%); }
 }
