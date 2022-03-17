@@ -31,7 +31,8 @@ export default function Home() {
           {/* </div> */}
 
           <div className={styles.learnmore}>
-            <p>Learn More</p>
+          {/* <div> */}
+            <p>About Me</p>
             <div>
               <BsArrowDown/>
             </div>
