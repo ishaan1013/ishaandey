@@ -183,6 +183,12 @@ a {
   box-sizing: border-box;
 }
 
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
 .container {
   padding: 0 10vw;
   @media screen and (max-width: 1000px) {
