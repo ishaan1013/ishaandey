@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 
 export default function Navbar() {
+    const { asPath } = useRouter()
 
     const scroll = () => {
         window.scroll({
@@ -9,17 +12,30 @@ export default function Navbar() {
         })
     }
 
-    return (
-        <nav>
-            <ul>
-            <li>
+    function AboutNav() {
+        if (asPath === '/') {
+            return (
                 <div
                 onClick={scroll}
                 style={{cursor:"pointer"}}
                 >About</div>
+            )
+        }
+        else {
+            return (
+                <Link href="/">About</Link>
+            )
+        }
+    }
+
+    return (
+        <nav>
+            <ul>
+            <li>
+                <AboutNav/>
             </li>
-            <li><Link href="/contact">Work</Link></li>
-            <li><Link href="/press">Contact</Link></li>
+            <li><Link href="/portfolio">Portfolio</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
             </ul>
         </nav>
     )

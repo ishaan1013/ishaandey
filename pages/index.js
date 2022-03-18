@@ -20,15 +20,13 @@ export default function Home() {
         
       <div className="container">
         
-        <main className={styles.main}>
+        <main className="main">
           <Blob/>
 
-          {/* <div className={styles.text}> */}
-            <h1 className={styles.title}>
-              <span>ISH<span>A</span>AN</span> <span>D<span>E</span>Y</span>
-            </h1>
-            <SwitchSubtitle/>
-          {/* </div> */}
+          <h1 className={styles.title}>
+            <span>ISH<span>A</span>AN</span> <span>D<span>E</span>Y</span>
+          </h1>
+          <SwitchSubtitle/>
 
           <div className={styles.learnmore}>
           {/* <div> */}
