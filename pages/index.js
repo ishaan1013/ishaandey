@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Blob from '../components/blob'
-import SwitchSubtitle from '../components/landing/switchSubtitle'
+// import SwitchSubtitle from '../components/landing/switchSubtitle'
 import {BsArrowDown} from 'react-icons/bs'
 import About from "../components/about"
 
@@ -26,7 +26,7 @@ export default function Home() {
           <h1 className={styles.title}>
             <span>ISH<span>A</span>AN</span> <span>D<span>E</span>Y</span>
           </h1>
-          <SwitchSubtitle/>
+          {/* <SwitchSubtitle/> */}
 
           <div className={styles.learnmore}>
           {/* <div> */}
