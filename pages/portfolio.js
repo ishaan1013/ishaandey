@@ -7,7 +7,7 @@ import taDisplay1 from '../assets/ta1.png'
 import taDisplay2 from '../assets/ta3.png'
 import taDisplay3 from '../assets/ta5.png'
 import ohseaDisplay1 from '../assets/ohsea1.png'
-import ohseaDisplay2 from '../assets/ohsea2.png'
+import ohseaDisplay2 from '../assets/ohsea3.png'
 
 export default function Portfolio() {
     return (
@@ -18,38 +18,65 @@ export default function Portfolio() {
                     <Blob/>
                     <div className={styles.gridContainer}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
-                            <div className={styles.taDisplay}>
-                                <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
-                                    <Image
-                                        src={taDisplay1}
-                                        width={127}
-                                        height={273}
-                                        alt="teachassist app 1"
-                                        placeholder="blur"
-                                    />
-                                </div>
-                                <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
-                                    <Image
-                                        src={taDisplay2}
-                                        width={127}
-                                        height={273}
-                                        alt="teachassist app 1"
-                                        placeholder="blur"
-                                    />
-                                </div>
-                                <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
-                                    <Image
-                                        src={taDisplay3}
-                                        width={127}
-                                        height={273}
-                                        alt="teachassist app 1"
-                                        placeholder="blur"
-                                    />
+                            <div className={styles.displayContainer}>
+                                <div className={styles.taDisplay}>
+                                    <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
+                                        <Image
+                                            src={taDisplay1}
+                                            width={110}
+                                            height={235}
+                                            alt="teachassist app 1"
+                                            placeholder="blur"
+                                        />
+                                    </div>
+                                    <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
+                                        <Image
+                                            src={taDisplay2}
+                                            width={110}
+                                            height={235}
+                                            alt="teachassist app 1"
+                                            placeholder="blur"
+                                        />
+                                    </div>
+                                    <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
+                                        <Image
+                                            src={taDisplay3}
+                                            width={110}
+                                            height={235}
+                                            alt="teachassist app 1"
+                                            placeholder="blur"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={`${styles.gridItem} ${styles.gI2}`}>test</div>
-                        <div className={`${styles.gridItem} ${styles.gI3}`}>test</div>
+                        <div className={`${styles.gridItem} ${styles.gI2}`}>
+                            <div className={styles.displayContainer}>
+                                <div className={styles.ohseaDisplay}>
+                                    <div className={`${styles.ohseaDisplay1} ${styles.ohseaDisplayItem}`}>
+                                        <Image
+                                            src={ohseaDisplay1}
+                                            width={205}
+                                            height={140}
+                                            alt="teachassist app 1"
+                                            placeholder="blur"
+                                        />
+                                    </div>
+                                    <div className={`${styles.ohseaDisplay2} ${styles.ohseaDisplayItem}`}>
+                                        <Image
+                                            src={ohseaDisplay2}
+                                            width={205}
+                                            height={140}
+                                            alt="teachassist app 1"
+                                            placeholder="blur"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI3}`}>
+
+                        </div>
                     </div>
                 </main>
             </div>
