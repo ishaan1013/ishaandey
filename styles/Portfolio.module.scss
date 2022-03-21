@@ -48,9 +48,15 @@
             transition: all 0.6s ease-in-out;
         }
     }
+}
 
-    h3 {
-        text-align: center;
+.lower {
+    text-align: center;
+    padding: 0 25px;
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.8em;
     }
 }
 

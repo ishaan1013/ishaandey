@@ -49,7 +49,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                             </div>
-                            <h3>TeachAssist App</h3>
+                            <div className={styles.lower}>
+                                <h3>TeachAssist App</h3>
+                                <p>Advanced tools for high school students in Ontario to promote academic success.</p>
+                            </div>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI2}`}>
                             <div className={styles.displayContainer}>
@@ -74,7 +77,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Ontario High School Esports Association</h3>
+                            <div className={styles.lower}>
+                                <h3>OHSEA</h3>
+                                <p>The Ontario High School Esports Association leads in high school esports opportunities.</p>
+                            </div>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
 

@@ -63,13 +63,6 @@
   overflow-y: hidden;
   overflow-x: visible;
   margin-top: 100px;
-
-  background: #131313;
-  background: -moz-linear-gradient(0deg, #13131344 25%, #13131300 100%);
-  background: -webkit-linear-gradient(0deg, #13131344 25%, #13131300 100%);
-  background: linear-gradient(0deg, #13131344 25%, #13131300 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-
   .abtFlex {
     display: flex;
     min-height: 100vh;
