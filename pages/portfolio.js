@@ -23,8 +23,8 @@ export default function Portfolio() {
                                     <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
                                         <Image
                                             src={taDisplay1}
-                                            width={110}
-                                            height={235}
+                                            width={107}
+                                            height={225}
                                             alt="teachassist app 1"
                                             placeholder="blur"
                                         />
@@ -32,8 +32,8 @@ export default function Portfolio() {
                                     <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
                                         <Image
                                             src={taDisplay2}
-                                            width={110}
-                                            height={235}
+                                            width={107}
+                                            height={225}
                                             alt="teachassist app 1"
                                             placeholder="blur"
                                         />
@@ -41,14 +41,15 @@ export default function Portfolio() {
                                     <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
                                         <Image
                                             src={taDisplay3}
-                                            width={110}
-                                            height={235}
+                                            width={107}
+                                            height={225}
                                             alt="teachassist app 1"
                                             placeholder="blur"
                                         />
                                     </div>
                                 </div>
                             </div>
+                            <h3>TeachAssist App</h3>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI2}`}>
                             <div className={styles.displayContainer}>
@@ -73,6 +74,7 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                             </div>
+                            <h3>Ontario High School Esports Association</h3>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
 

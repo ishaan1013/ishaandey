@@ -167,11 +167,16 @@
   font-style: italic;
 }
 
+html {
+  background-color: #131313;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: HelveticaEx, sans-serif;
+  color: #ffffffee;
 }
 
 a {
@@ -214,8 +219,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(7px);
+  background-color: #131313dd;
+  backdrop-filter: blur(10px);
   z-index: 10;
   ul {
     padding: 0;
@@ -246,11 +251,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
-  height: 75%;
+  width: 65%;
+  height: 65%;
   z-index: -10;
-  filter: blur(20px);
-  opacity: 15%
+  filter: blur(40px);
+  opacity: 5%
 }
 
 // .learnmore {
