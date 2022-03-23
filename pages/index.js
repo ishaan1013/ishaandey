@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Blob from '../components/blob'
 // import SwitchSubtitle from '../components/landing/switchSubtitle'
 import {BsArrowDown} from 'react-icons/bs'
-import About from "../components/about"
+import About from "../components/landing/about"
 
 export default function Home() {
   return (
