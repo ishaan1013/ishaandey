@@ -4,42 +4,64 @@ import { IoLogoAppleAppstore } from 'react-icons/io5'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
-import taDisplay1 from '../../assets/ta1.png'
-import taDisplay2 from '../../assets/ta3.png'
-import taDisplay3 from '../../assets/ta5.png'
-
 import styles from '../../styles/Portfolio.module.scss'
 
-function displays(props) {
+function Displays(props) {
     if (props.data.type === "app") {
         return (
             <div className={styles.displayContainer}>
                 <div className={styles.taDisplay}>
                     <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
                         <Image
-                            src={taDisplay1}
+                            src={props.data.img1}
                             width={107}
                             height={225}
-                            alt="teachassist app 1"
+                            alt={props.data.alt1}
                             placeholder="blur"
                         />
                     </div>
                     <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
                         <Image
-                            src={taDisplay2}
+                            src={props.data.img2}
                             width={107}
                             height={225}
-                            alt="teachassist app 1"
+                            alt={props.data.alt2}
                             priority
                         />
                     </div>
                     <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
                         <Image
-                            src={taDisplay3}
+                            src={props.data.img3}
                             width={107}
                             height={225}
-                            alt="teachassist app 1"
+                            alt={props.data.alt3}
                             priority
+                        />
+                    </div>
+                </div>
+            </div>
+        )
+    }
+    else if (props.data.type === "site") {
+        return (
+            <div className={styles.displayContainer}>
+                <div className={styles.ohseaDisplay}>
+                    <div className={`${styles.ohseaDisplay1} ${styles.ohseaDisplayItem}`}>
+                        <Image
+                            src={props.data.img1}
+                            width={205}
+                            height={140}
+                            alt={props.data.alt1}
+                            placeholder="blur"
+                        />
+                    </div>
+                    <div className={`${styles.ohseaDisplay2} ${styles.ohseaDisplayItem}`}>
+                        <Image
+                            src={props.data.img2}
+                            width={205}
+                            height={140}
+                            alt={props.data.alt2}
+                            placeholder="blur"
                         />
                     </div>
                 </div>
@@ -48,60 +70,72 @@ function displays(props) {
     }
 }
 
+function Tool(props) {
+    if (props.data !== "None") {
+        return (
+            <div className={styles.tool}>{props.data}</div>
+        )
+    }
+    else {
+        return null
+    }
+}
+
+function LinkBtn(props) {
+    if (props.icon === "Github") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}><IoLogoGithub/></a>
+        )
+    }
+    if (props.icon === "Link") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}><HiOutlineExternalLink/></a>
+        )
+    }
+    if (props.icon === "Appstore") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}><IoLogoAppleAppstore/></a>
+        )
+    }
+    else {
+        return null
+    }
+}
+
 
 export default function PortfolioItem(props) {  
     return(
-        <div className={`${styles.gridItem} ${styles.gI1}`}>
+        <>
             <div className={styles.displayContainer}>
-                <div className={styles.taDisplay}>
-                    <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
-                        <Image
-                            src={taDisplay1}
-                            width={107}
-                            height={225}
-                            alt="teachassist app 1"
-                            placeholder="blur"
-                        />
-                    </div>
-                    <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
-                        <Image
-                            src={taDisplay2}
-                            width={107}
-                            height={225}
-                            alt="teachassist app 1"
-                            priority
-                        />
-                    </div>
-                    <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
-                        <Image
-                            src={taDisplay3}
-                            width={107}
-                            height={225}
-                            alt="teachassist app 1"
-                            priority
-                        />
-                    </div>
-                </div>
+                <Displays data={props.data}/>
             </div>
             <div className={styles.lower}>
-                <h3>TeachAssist App</h3>
-                <p>Advanced tools for high school students to promote academic success.</p>
+                <h3>{props.data.title}</h3>
+                <p>{props.data.desc}</p>
                 <div className={styles.tools}>
-                    <div className={styles.tool}>React Native</div>
-                    <div className={styles.tool}>Expo</div>
+                    <Tool data={props.data.tool1}/>
+                    <Tool data={props.data.tool2}/>
+                    <Tool data={props.data.tool3}/>
+                    <Tool data={props.data.tool4}/>
                 </div>
                 <div className={styles.links}>
-                    <a 
-                    href="https://github.com/Teach-Assist-App/frontend2" 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className={styles.link}><IoLogoGithub/></a>
-                    <a 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className={styles.link}><IoLogoAppleAppstore/></a>
+                    <LinkBtn icon={props.data.icon1} link={props.data.link1}/>
+                    <LinkBtn icon={props.data.icon2} link={props.data.link2}/>
+                    <LinkBtn icon={props.data.icon3} link={props.data.link3}/>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
