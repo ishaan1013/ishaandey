@@ -10,8 +10,8 @@ function Displays(props) {
     if (props.data.type === "app") {
         return (
             <div className={styles.displayContainer}>
-                <div className={styles.taDisplay}>
-                    <div className={`${styles.taDisplay1} ${styles.taDisplayItem}`}>
+                <div className={`${props.data.class} ${styles.appDisplay}`}>
+                    <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img1}
                             width={107}
@@ -20,7 +20,7 @@ function Displays(props) {
                             placeholder="blur"
                         />
                     </div>
-                    <div className={`${styles.taDisplay2} ${styles.taDisplayItem}`}>
+                    <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img2}
                             width={107}
@@ -29,7 +29,7 @@ function Displays(props) {
                             priority
                         />
                     </div>
-                    <div className={`${styles.taDisplay3} ${styles.taDisplayItem}`}>
+                    <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img3}
                             width={107}
@@ -45,8 +45,8 @@ function Displays(props) {
     else if (props.data.type === "site") {
         return (
             <div className={styles.displayContainer}>
-                <div className={styles.ohseaDisplay}>
-                    <div className={`${styles.ohseaDisplay1} ${styles.ohseaDisplayItem}`}>
+                <div className={`${props.data.class} ${styles.siteDisplay}`}>
+                    <div className={styles.siteDisplayItem}>
                         <Image
                             src={props.data.img1}
                             width={205}
@@ -55,7 +55,7 @@ function Displays(props) {
                             placeholder="blur"
                         />
                     </div>
-                    <div className={`${styles.ohseaDisplay2} ${styles.ohseaDisplayItem}`}>
+                    <div className={styles.siteDisplayItem}>
                         <Image
                             src={props.data.img2}
                             width={205}

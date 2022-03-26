@@ -5,9 +5,12 @@ import taDisplay3 from '../../assets/ta5.png'
 import ohseaDisplay1 from '../../assets/ohsea1.png'
 import ohseaDisplay2 from '../../assets/ohsea3.png'
 
+import styles from "../../styles/Portfolio.module.scss"
+
 const data = {
     taData: {
         type: "app",
+        class: styles.taDisplay,
         img1: taDisplay1,
         img2: taDisplay2,
         img3: taDisplay3,
@@ -31,6 +34,7 @@ const data = {
     },
     ohseaData: {
         type: "site",
+        class: styles.ohseaDisplay,
         img1: ohseaDisplay1,
         img2: ohseaDisplay2,
         img3: "",

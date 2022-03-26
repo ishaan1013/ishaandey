@@ -24,26 +24,26 @@
     justify-content: center;
     align-items: center;
     border: 1px #ffffff55 solid;
-    .taDisplayItem {
+    .appDisplayItem {
         user-select: none;
         position: absolute;
         transform: skew(0deg, 0deg);
         transition: all 0.6s ease-in-out;
     }
     &:hover {
-        .taDisplayItem {
+        .appDisplayItem {
             transform: skewX(-5deg) rotateZ(-5deg) scaleX(0.9);
             transition: all 0.6s ease-in-out;
         }
     }
-    .ohseaDisplayItem {
+    .siteDisplayItem {
         user-select: none;
         position: absolute;
         transform: skew(0deg, 0deg);
         transition: all 0.6s ease-in-out;
     }
     &:hover {
-        .ohseaDisplayItem {
+        .siteDisplayItem {
             transform: skewX(-3deg) rotateZ(-3deg) scaleX(0.95);
             transition: all 0.6s ease-in-out;
         }
@@ -110,7 +110,7 @@
     width: 100%;
 }
 
-.taDisplay {
+.appDisplay {
     position: relative;
     height: 247px;
     width: 80%;
@@ -118,46 +118,56 @@
         padding: 0;
         border-radius: 15px;
     }
-    span {
-        box-shadow: 6px 3px 20px 0px rgba(72, 117, 68, 0.4);
-    }
-    .taDisplay1 {
+    div:nth-child(1) {
         z-index: 2;
     }
-    .taDisplay2 {
+    div:nth-child(2) {
         // display: none;
         z-index: 1;
         top: 10px;
         left: 92px;
     }
-    .taDisplay3 {
+    div:nth-child(3) {
         // display: none;
         top: 20px;
         left: 184px;
+    }
+}
+
+.taDisplay {
+    span {
+        box-shadow: 6px 3px 20px 0px rgba(72, 117, 68, 0.4);
+    }
+    div:nth-child(3) {
         span {
             box-shadow: 3px 3px 15px 0px rgba(72, 117, 68, 0.4);
         }
     }
 }
 
-.ohseaDisplay {
+.siteDisplay {
     position: relative;
     height: 207px;
     width: 80%;
     * {
         border-radius: 15px;
     }
-    span {
-        box-shadow: 10px 10px 25px -2px rgba(30, 50, 78, 0.5);
-    }
-    .ohseaDisplay1 {
+    div:nth-child(1) {
         z-index: 2;
     }
-    .ohseaDisplay2 {
+    div:nth-child(2) {
         // display: none;
         z-index: 1;
         top: 65px;
         left: 80px;
+    }
+}
+
+.ohseaDisplay {
+    span {
+        box-shadow: 10px 10px 25px -2px rgba(30, 50, 78, 0.5);
+    }
+    div:nth-child(2) {
         span {
             box-shadow: 2px 2px 15px -2px rgba(30, 50, 78, 0.5);
         }
