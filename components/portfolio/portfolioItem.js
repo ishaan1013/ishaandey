@@ -17,7 +17,7 @@ function Displays(props) {
                             width={107}
                             height={225}
                             alt={props.data.alt1}
-                            placeholder="blur"
+                            priority
                         />
                     </div>
                     <div className={styles.appDisplayItem}>

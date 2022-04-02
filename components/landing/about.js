@@ -1,5 +1,8 @@
+import Image from 'next/image'
+
 import styles from '../../styles/Home.module.scss'
 import { useState } from 'react'
+import personalPhoto from '../../assets/personalPhoto.jpg'
 
 function useHover() {
   const [hovering, setHovering] = useState(false)
@@ -56,12 +59,6 @@ export default function About() {
                         >
                             LINKEDIN
                         </a>
-                        <a href="https://www.instagram.com/eezahn"
-                        target="_blank"
-                        rel="noreferrer"
-                        >
-                            INSTAGRAM
-                        </a>
                         <div>
                             <div 
                             {...textHoverProps}
@@ -77,6 +74,12 @@ export default function About() {
                     </div>
                 </div>
                 <div className={styles.right}>
+                    <Image
+                        src={personalPhoto}
+                        width={600}
+                        height={815}
+                        placeholder="blur"
+                    />
                     {/* <div className={styles.trackRotate}>
                         <div className={styles.track}>
                             <div>
