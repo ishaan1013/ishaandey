@@ -171,6 +171,18 @@ html {
   background-color: #131313;
 }
 
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff0b;
+  border: 1px #ffffff0b solid;
+  border-radius: 5px;
+}
+
 html,
 body {
   padding: 0;
