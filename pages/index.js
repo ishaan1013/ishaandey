@@ -41,7 +41,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div>
+            <div className={styles.arrow}>
               <BsArrowDown/>
             </div>
           </div>
