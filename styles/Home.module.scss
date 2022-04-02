@@ -47,12 +47,12 @@
     font-size: 1.2rem;
   }
 
-  div {
-    animation: float 1s infinite;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(.67,0,.34,.98);
+  // div {
+  //   animation: float 1s infinite;
+  //   animation-direction: alternate;
+  //   animation-timing-function: cubic-bezier(.67,0,.34,.98);
 
-  }
+  // }
 }
 
 @keyframes float {
@@ -133,23 +133,49 @@
     width: 50px;
   }
 
-  .trackRotate {
-    transform: rotate(90deg);
-  }
+  // .trackRotate {
+  //   transform: rotate(90deg);
+  // }
 
-  .track {
-    white-space: nowrap;
-    will-change: transform;
-    animation: inf-track 15s linear infinite;
+  // .track {
+  //   white-space: nowrap;
+  //   will-change: transform;
+  //   animation: inf-track 15s linear infinite;
 
-    div {
-      font-size: 1.2rem;
-      user-select: none;
-    }
+  //   div {
+  //     font-size: 1.2rem;
+  //     user-select: none;
+  //   }
+  // }
+}
+
+.trackContainer {
+  border: 1px #ffffff55 solid;
+  border-radius: 50px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.trackAbout {
+  white-space: nowrap;
+  will-change: transform;
+  animation: inf-track 5s linear infinite;
+  div {
+    font-size: 1.2rem;
+    user-select: none;
   }
 }
 
+// @keyframes inf-track {
+//   from { transform: translateX(-50%); }
+//   to { transform: translateX(-3200%); }
+// }
+
 @keyframes inf-track {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(-3200%); }
+  from { transform: translateX(-50.5%); }
+  to { transform: translateX(0%); }
 }

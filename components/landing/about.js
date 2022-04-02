@@ -77,13 +77,13 @@ export default function About() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.trackRotate}>
+                    {/* <div className={styles.trackRotate}>
                         <div className={styles.track}>
                             <div>
                                 &nbsp;About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me  -  About Me
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

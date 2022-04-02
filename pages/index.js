@@ -29,8 +29,18 @@ export default function Home() {
           {/* <SwitchSubtitle/> */}
 
           <div className={styles.learnmore}>
-          {/* <div> */}
-            <p>About Me</p>
+            <div className={styles.trackContainer}>
+              <div className={styles.trackAbout}>
+                <p>
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
+                  About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;  
+                </p>
+              </div>
+            </div>
             <div>
               <BsArrowDown/>
             </div>
