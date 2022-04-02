@@ -133,7 +133,14 @@
     width: 350px;
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
 
+    .imgContainer {
+      --smooth-corners: 7;
+      mask-image: paint(smooth-corners);
+      -webkit-mask-image: paint(smooth-corners);
+    }
   }
 
   // .trackRotate {

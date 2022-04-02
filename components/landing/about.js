@@ -4,6 +4,8 @@ import styles from '../../styles/Home.module.scss'
 import { useState } from 'react'
 import personalPhoto from '../../assets/personalPhoto.jpg'
 
+if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
+
 function useHover() {
   const [hovering, setHovering] = useState(false)
   const onHoverProps = {
@@ -74,12 +76,14 @@ export default function About() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <Image
-                        src={personalPhoto}
-                        width={600}
-                        height={815}
-                        placeholder="blur"
-                    />
+                    <div className={styles.imgContainer}>
+                        <Image
+                            src={personalPhoto}
+                            width={600}
+                            height={815}
+                            placeholder="blur"
+                        />
+                    </div>
                     {/* <div className={styles.trackRotate}>
                         <div className={styles.track}>
                             <div>
