@@ -29,7 +29,7 @@ export default function Home() {
           {/* <SwitchSubtitle/> */}
 
           <div className={styles.learnmore}>
-            <div className={styles.trackContainer}>
+            {/* <div className={styles.trackContainer}>
               <div className={styles.trackAbout}>
                 <p>
                   About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,7 +40,8 @@ export default function Home() {
                   About Me&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;  
                 </p>
               </div>
-            </div>
+            </div> */}
+            <p>About Me</p>
             <div className={styles.arrow}>
               <BsArrowDown/>
             </div>
