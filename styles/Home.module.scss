@@ -64,6 +64,35 @@
   }
 }
 
+.trackContainer {
+  border: 1px #ffffff55 solid;
+  border-radius: 50px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.trackAbout {
+  white-space: nowrap;
+  will-change: transform;
+  animation: inf-track 7s linear infinite;
+  div {
+    font-size: 1.2rem;
+    user-select: none;
+  }
+}
+
+@keyframes inf-track {
+  from { transform: translateX(-50.5%); }
+  to { transform: translateX(0%); }
+}
+
+
+
+
 .about {
   min-height: 100vh;
   padding: 0;
@@ -87,6 +116,13 @@
       font-size: 1.2rem;
       line-height: 1.5em;
       margin: 1em 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.1rem;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
     
     .socials {
@@ -102,6 +138,13 @@
         cursor: pointer;
         transform: translate(0, 0px);
         transition: all 0.3s; 
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.3rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.2rem;
+        }
       }
       a:hover {
         transition: all 0.1s; 
@@ -123,6 +166,12 @@
           background-clip: text;
           -webkit-text-fill-color: transparent;
           font-size: 1rem;
+          @media screen and (max-width: 768px) {
+            font-size: 0.9rem;
+          }
+          @media screen and (max-width: 500px) {
+            font-size: 0.8rem;
+          }
           font-weight: 400;
         }
       }
@@ -136,11 +185,25 @@
     padding: 0;
     margin: 0;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      width: 60%;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 70%;
+    }
+    
+    @media screen and (max-width: 500px) {
+      width: 80%;
+    }
+    
     .imgContainer {
       --smooth-corners: 6;
       mask-image: paint(smooth-corners);
       -webkit-mask-image: paint(smooth-corners);
     }
+
   }
 
   // .trackRotate {
@@ -159,33 +222,7 @@
   // }
 }
 
-.trackContainer {
-  border: 1px #ffffff55 solid;
-  border-radius: 50px;
-  width: 300px;
-  height: 40px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.trackAbout {
-  white-space: nowrap;
-  will-change: transform;
-  animation: inf-track 7s linear infinite;
-  div {
-    font-size: 1.2rem;
-    user-select: none;
-  }
-}
-
 // @keyframes inf-track {
 //   from { transform: translateX(-50%); }
 //   to { transform: translateX(-3200%); }
 // }
-
-@keyframes inf-track {
-  from { transform: translateX(-50.5%); }
-  to { transform: translateX(0%); }
-}
