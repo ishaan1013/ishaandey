@@ -116,6 +116,12 @@ function LinkBtn(props) {
 
 
 export default function PortfolioItem(props) {  
+
+    function SeeMoreFunc() {
+        props.setPopup(true)
+        props.setContent(props.data.title)
+    }
+
     return(
         <>
             <div className={styles.displayContainer}>
@@ -137,8 +143,8 @@ export default function PortfolioItem(props) {
                 </div>
             </div>
             <div 
-            className={styles.seeMore}
-            
+                className={styles.seeMore}
+                onClick={() => SeeMoreFunc()}
             >
                 <p>See More</p>
                 <div className={styles.underline}/>

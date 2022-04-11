@@ -4,8 +4,6 @@ import styles from '../../styles/Home.module.scss'
 import { useState } from 'react'
 import personalPhoto from '../../assets/personalPhoto.jpg'
 
-if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
-
 function useHover() {
   const [hovering, setHovering] = useState(false)
   const onHoverProps = {

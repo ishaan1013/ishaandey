@@ -198,10 +198,8 @@
       width: 80%;
     }
     
-    .imgContainer {
-      --smooth-corners: 6;
-      mask-image: paint(smooth-corners);
-      -webkit-mask-image: paint(smooth-corners);
+    .imgContainer * {
+      border-radius: 50px;
     }
 
   }

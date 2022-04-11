@@ -1,0 +1,46 @@
+.dark {
+    position: fixed;
+    background-color: #13131388;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    height: 100vw;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    animation: dark-transition 0.3s ease-in-out;
+}
+
+.container {
+    z-index: 11;
+    background-color: #131313;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    animation: rollout 0.3s ease-in-out;
+}
+
+@keyframes dark-transition {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@keyframes rollout {
+    0% { transform: translateX(50vw); }
+    100% { transform: none; }
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    cursor: pointer;
+}
