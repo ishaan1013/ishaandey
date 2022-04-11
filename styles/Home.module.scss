@@ -113,9 +113,10 @@
     min-height: 100%;
 
     div {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       line-height: 1.5em;
       margin: 1em 0;
+      font-weight: 300;
 
       @media screen and (max-width: 768px) {
         font-size: 1.1rem;
