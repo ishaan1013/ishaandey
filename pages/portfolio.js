@@ -10,7 +10,7 @@ export default function Portfolio() {
         <>
             <Navbar/>
             <div className="container">
-                <main className="main">
+                <main className={styles.main}>
                     <Blob/>
                     <div className={styles.gridContainer}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
@@ -23,6 +23,17 @@ export default function Portfolio() {
 
                         </div>
                     </div>
+                    {/* <div className={styles.gridContainer}>
+                        <div className={`${styles.gridItem} ${styles.gI1}`}>
+                            <PortfolioItem data={data.taData}/>
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI2}`}>
+                            <PortfolioItem data={data.ohseaData}/>
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI3}`}>
+
+                        </div>
+                    </div> */}
                 </main>
             </div>
         </>

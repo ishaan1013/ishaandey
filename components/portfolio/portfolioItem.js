@@ -14,8 +14,8 @@ function Displays(props) {
                     <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img1}
-                            width={107}
-                            height={225}
+                            width={100}
+                            height={210}
                             alt={props.data.alt1}
                             priority
                         />
@@ -23,8 +23,8 @@ function Displays(props) {
                     <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img2}
-                            width={107}
-                            height={225}
+                            width={100}
+                            height={210}
                             alt={props.data.alt2}
                             priority
                         />
@@ -32,8 +32,8 @@ function Displays(props) {
                     <div className={styles.appDisplayItem}>
                         <Image
                             src={props.data.img3}
-                            width={107}
-                            height={225}
+                            width={100}
+                            height={210}
                             alt={props.data.alt3}
                             priority
                         />
@@ -123,7 +123,7 @@ export default function PortfolioItem(props) {
             </div>
             <div className={styles.lower}>
                 <h3>{props.data.title}</h3>
-                <p>{props.data.desc}</p>
+                {/* <p>{props.data.desc}</p> */}
                 <div className={styles.tools}>
                     <Tool data={props.data.tool1}/>
                     <Tool data={props.data.tool2}/>
@@ -135,6 +135,13 @@ export default function PortfolioItem(props) {
                     <LinkBtn icon={props.data.icon2} link={props.data.link2}/>
                     <LinkBtn icon={props.data.icon3} link={props.data.link3}/>
                 </div>
+            </div>
+            <div 
+            className={styles.seeMore}
+            
+            >
+                <p>See More</p>
+                <div className={styles.underline}/>
             </div>
         </>
     )
