@@ -4,6 +4,7 @@ import styles from '../styles/Contact.module.scss'
 
 import { Formik, Form, Field } from 'formik';
 import { RiErrorWarningLine } from 'react-icons/ri'
+import { FaRegCopy } from 'react-icons/fa'
 
 function validateEmail(value) {
     let error;
@@ -32,10 +33,12 @@ export default function Contact() {
                     <Blob/>
                     <div className={styles.wrapper}>
                         <section className={styles.text}>
-                            <h2>Talk to me!</h2>
+                            <h1>Talk to me!</h1>
                             <div className={styles.subText}>
-                                <p>Or DM me on Discord! <span>@Aero#9241</span></p>
-                                <div className={styles.copyButton}></div>
+                                <p>Or DM me on Discord:<br className={styles.break}/> <span>@Aero#9241</span></p>
+                                <div className={styles.copyButton}>
+                                    <FaRegCopy/>
+                                </div>
                             </div>
                         </section>
                         <section className={styles.formContainer}>
@@ -53,38 +56,37 @@ export default function Contact() {
                             >
                             {({ errors, touched, isValidating }) => (
                             <Form>
-                                <div className="form-wrapper">
-                                    <div className="input-field">
-                                        <label htmlFor="email">Email Address</label>
-                                        <Field
-                                        id="email"
-                                        name="email"
-                                        placeholder="student@ohsea.gg"
-                                        as="input"
-                                        validate={validateEmail}
-                                        />
-                                        {errors.email && touched.email &&
-                                        <div className="error"><RiErrorWarningLine className="warning-icon"/> {errors.email}</div>
-                                        }
-                                    </div>
-                                    <div className="input-field">
-                                        <label htmlFor="msg">Message</label>
-                                        <Field
-                                        id="msg"
-                                        name="msg"
-                                        placeholder="Your Message"
-                                        as="textarea"
-                                        validate={validateMessage}
-                                        />
-                                        {errors.msg && touched.msg &&
-                                        <div className="error"><RiErrorWarningLine className="warning-icon"/> {errors.msg}</div>
-                                        }
-                                    </div>
-                                    <button
+                                <div className={styles.inputField}>
+                                    <label htmlFor="email">Email Address</label>
+                                    <Field
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@email.com"
+                                    as="input"
+                                    validate={validateEmail}
+                                    />
+                                    {errors.email && touched.email &&
+                                    <div className={styles.error}><RiErrorWarningLine className="warning-icon"/> {errors.email}</div>
+                                    }
+                                </div>
+                                <div className={styles.inputField}>
+                                    <label htmlFor="msg">Message</label>
+                                    <Field
+                                    id="msg"
+                                    name="msg"
+                                    placeholder="Your Message"
+                                    as="textarea"
+                                    validate={validateMessage}
+                                    />
+                                    {errors.msg && touched.msg &&
+                                    <div className={styles.error}><RiErrorWarningLine/> {errors.msg}</div>
+                                    }
+                                </div>
+
+                                <button
                                     type="submit"
                                     className="btn-fill"
-                                    >Send</button>
-                                </div>
+                                >Send</button>
                             </Form>
                             )}
                             </Formik>

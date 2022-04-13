@@ -1,24 +1,77 @@
 .wrapper {
     display: flex;
+    width: 80%;
     justify-content: space-between;
+
+    @media screen and (max-width: 1440px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        margin-bottom: 4em;
+    }
     
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        font-weight: 800;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 2rem;
+        }
+    }
     .subText {
         display: flex;
+        align-items: center;
+        margin-top: 1em;
+
         p {
             font-size: 1.15rem;
             line-height: 1.5em;
-            margin-right: 0.5em;
+            margin: 0 0.5em 0 0;
+            font-weight: 300;
+            @media screen and (max-width: 1440px) {
+                font-size: 1rem;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 0.9rem;
+            }
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin-right: 3em;
+            }
         }
+
+        .break {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+
         span {
             font-weight: 600;
+            margin: 0 0.7em;
+            @media screen and (max-width: 1024px) {
+                margin: 0 0.3em;
+            }
         }
         div {
-            padding: 0.8em 0.8em 0.6em 0.8em;
+            padding: 0.6em 0.6em 0.4em 0.6em;
             border-radius: 8px;
             color: #ffffffcc;
             border: 1px #ffffff44 solid;
@@ -26,6 +79,20 @@
             user-select: none;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
+
+            @media screen and (max-width: 1024px) {
+                padding: 0.4em 0.4em 0.3em 0.4em;
+            }
+
+            * {
+                width: 17px;
+                height: 17px;
+
+                @media screen and (max-width: 1024px) {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
 
             &:hover {
                 color: #ffffffee;
@@ -40,14 +107,76 @@
 .formContainer {
     width: 40%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    justify-content: center;
 
-input {
-    padding: 0.4em;
-    border-radius: 20px;
-    color: #ffffffcc;
-    border: 1px #ffffff44 solid;
-    background-color:#ffffff0a;
+    @media screen and (max-width: 768px) {
+        width: 60%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 75%;
+    }
+    @media screen and (max-width: 400px) {
+        width: 85%;
+    }
+    
+    label {
+        font-weight: 500;
+        margin: 0 0 0.7em 0.5em;
+    }
+
+    input, textarea {
+        border-radius: 15px;
+        color: #ffffffcc;
+        border: 1px #ffffff44 solid;
+        background-color:#ffffff0a;
+        font-family: HelveticaEx, sans-serif;
+        font-weight: 300;
+        
+        padding: 0.8em;
+        margin-bottom: 3.5em;
+
+        &:focus {
+            outline: 1px #ffffff88 solid;
+        }
+    }
+    textarea {
+        resize: vertical;
+        min-height: 80px;
+        height: 130px;
+        max-height: 300px;
+    }
+    form {
+        width: 100%;
+    }
+
+    .inputField {
+        display: flex;
+        flex-direction: column;
+    }
+    .error {
+        color: #c73b3b;
+        font-size: 0.8rem;
+        margin-top: -3em;
+        margin-bottom: 2em;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 15px;
+        color: #ffffffcc;
+        border: 1px #ffffff44 solid;
+        background-color:#ffffff11;
+        font-family: HelveticaEx, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+
+        padding: 0.8em;
+        transition: all 0.3s;
+
+        &:hover {
+            border: 1px #ffffff66 solid;
+            background-color:#ffffff13;
+            transition: all 0.3s;
+        }
+    }
 }
