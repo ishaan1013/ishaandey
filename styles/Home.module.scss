@@ -48,21 +48,23 @@
   }
 
   .arrow {
-    animation: float 1s infinite;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(.67,0,.34,.98);
-
+    // animation: float 1s infinite;
+    // animation-direction: alternate;
+    // animation-timing-function: cubic-bezier(.67,0,.34,.98);
+    * {
+      color: white;
+    }
   }
 }
 
-@keyframes float {
-  from {
-    transform: translate(0, 0px);
-  }
-  to {
-    transform: translate(0, 7px);
-  }
-}
+// @keyframes float {
+//   from {
+//     transform: translate(0, 0px);
+//   }
+//   to {
+//     transform: translate(0, 7px);
+//   }
+// }
 
 .trackContainer {
   border: 1px #ffffff55 solid;

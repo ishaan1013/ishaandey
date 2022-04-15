@@ -4,8 +4,9 @@ import styles from '../styles/Home.module.scss'
 import Navbar from '../components/navbar'
 import Blob from '../components/blob'
 // import SwitchSubtitle from '../components/landing/switchSubtitle'
-import {BsArrowDown} from 'react-icons/bs'
 import About from "../components/landing/about"
+import UseAnimations from "react-useanimations";
+import arrowDown from 'react-useanimations/lib/arrowDown';
 
 export default function Home() {
   return (
@@ -43,7 +44,12 @@ export default function Home() {
             </div> */}
             <p>About Me</p>
             <div className={styles.arrow}>
-              <BsArrowDown/>
+              <UseAnimations
+                animation={arrowDown}
+                size={24}
+                strokeColor="white"
+              />
+              {/* <BsArrowDown/> */}
             </div>
           </div>
         </main>
