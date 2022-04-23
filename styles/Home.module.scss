@@ -8,8 +8,10 @@
   letter-spacing: 1px;
   margin: 0 0 20px 0;
   line-height: 1.15;
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
+
+  mix-blend-mode: difference;
 
   @media screen and (max-width: 1024px) {
     font-size: 4.5rem;
@@ -19,16 +21,16 @@
   }
 
   span {
-    color: #ffffffee;
-    &:hover {
-      color: transparent;
-      -webkit-text-stroke: 1.5px #ffffffee;
-      cursor: default;
-      span {
-        color: transparent;
-        -webkit-text-stroke: 1.5px #ffffffee;
-      }
-    }
+    color: #ffffff;
+    cursor: default;
+    // &:hover {
+    //   color: transparent;
+    //   -webkit-text-stroke: 1.5px #ffffffee;
+    //   span {
+    //     color: transparent;
+    //     -webkit-text-stroke: 1.5px #ffffffee;
+    //   }
+    // }
 
     span {
       letter-spacing: 5px;

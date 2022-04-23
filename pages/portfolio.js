@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar'
-import Blob from '../components/blob'
+import Circle from '../components/circle'
 import styles from '../styles/Portfolio.module.scss'
 
 import PortfolioItem from '../components/portfolio/portfolioItem'
@@ -31,7 +31,7 @@ export default function Portfolio() {
             <Navbar/>
             <div className="container">
                 <main className={styles.main}>
-                    <Blob/>
+                    <Circle/>
                     <div className={styles.gridContainer}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
                             <PortfolioItem 

@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 // import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Blob from '../components/blob'
+import Circle from '../components/circle'
 // import SwitchSubtitle from '../components/landing/switchSubtitle'
 import About from "../components/landing/about"
 import UseAnimations from "react-useanimations";
@@ -22,7 +23,7 @@ export default function Home() {
       <div className="container">
         
         <main className="main">
-          <Blob/>
+          <Circle/>
 
           <h1 className={styles.title}>
             <span>ISH<span>A</span>AN</span> <span>D<span>E</span>Y</span>
