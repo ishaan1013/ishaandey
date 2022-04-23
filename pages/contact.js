@@ -25,6 +25,8 @@ function validateMessage(value) {
 }
 
 export default function Contact() {
+    const form = useRef();
+
     return (
         <>
             <Navbar/>
