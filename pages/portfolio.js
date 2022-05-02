@@ -11,16 +11,26 @@ import { useState } from 'react'
 
 export default function Portfolio() {
     const [popup, setPopup] = useState(false)
-    const [content, setContent] = useState("none")
+    const [content, setContent] = useState("")
 
     function ShowPopup() {
         if (popup) {
-            return (
-                <Popup
-                    content={content}
-                    setPopup={setPopup}
-                />
-            )
+            if (content == "TeachAssist App") {
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.taData}
+                    />
+                )
+            }
+            if (content == "OHSEA") {
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.ohseaData}
+                    />
+                )
+            }
         }
 
         return null

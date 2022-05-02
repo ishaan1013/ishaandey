@@ -6,12 +6,67 @@ import { IoClose } from "react-icons/io5";
 // import { IoLogoAppleAppstore } from 'react-icons/io5'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
+import { IoLogoAppleAppstore } from 'react-icons/io5'
 
 import ohsea1 from '../../assets/ohsea1.png'
 import ohsea2 from '../../assets/ohsea2.png'
 import ohsea3 from '../../assets/ohsea3.png'
 
-export default function Popup(props) {  
+function Tool(props) {
+    if (props.data !== "None") {
+        return (
+            <div className={styles.tool}>{props.data}</div>
+        )
+    }
+    else {
+        return null
+    }
+}
+
+function LinkBtn(props) {
+    if (props.icon === "Github") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}>
+                <IoLogoGithub/>
+                <h3>Github</h3>
+            </a>
+        )
+    }
+    if (props.icon === "Link") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}>
+                <HiOutlineExternalLink/>
+                <h3>Site</h3>
+            </a>
+        )
+    }
+    if (props.icon === "Appstore") {
+        return (
+            <a 
+            href={props.link} 
+            target="_blank" 
+            rel="noreferrer"
+            className={styles.link}>
+                <IoLogoAppleAppstore/>
+                <h3>App Store</h3>
+            </a>
+        )
+    }
+    else {
+        return null
+    }
+}
+
+export default function Popup(props) { 
+
     return(
         <>
             <div 
@@ -52,25 +107,22 @@ export default function Popup(props) {
                     </div>
                 </div>
                 <div className={styles.info}>
-                    <h1>Ontario High School Esports Association</h1>
+                    <h1>{props.data.longTitle}</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        {props.data.desc}
                     </p>
 
                     <div className={styles.tools}>
-                        <div className={styles.tool}>React</div>
-                        <div className={styles.tool}>Gatsby</div>
-                        <div className={styles.tool}>SCSS</div>
-                        <div className={styles.tool}>Netlify</div>
-                        <div className={styles.tool}>Figma</div>
+                        <Tool data={props.data.tool1} />
+                        <Tool data={props.data.tool2} />
+                        <Tool data={props.data.tool3} />
+                        <Tool data={props.data.tool4} />
+                        <Tool data={props.data.tool5} />
                     </div>
                     <div className={styles.links}>
-                        <div className={styles.link}><IoLogoGithub/>
-                            <h3>GitHub</h3>
-                        </div>
-                        <div className={styles.link}><HiOutlineExternalLink/>
-                            <h3>Site</h3>
-                        </div>
+                        <LinkBtn icon={props.data.icon1} link={props.data.link1}/>
+                        <LinkBtn icon={props.data.icon2} link={props.data.link2}/>
+                        <LinkBtn icon={props.data.icon3} link={props.data.link3}/>
                     </div>
                 </div>
             </section>

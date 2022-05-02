@@ -19,12 +19,14 @@ const data = {
         alt3: "teachassist app 3",
 
         title: "TeachAssist App",
+        longTitle: "TeachAssist App",
         desc: "Advanced tools for high school students for academic success. Designed & developed.",
 
         tool1: "React Native",
         tool2: "Expo",
-        tool3: "None",
+        tool3: "Figma",
         tool4: "None",
+        tool5: "None",
         icon1: "Github",
         icon2: "Appstore",
         icon3: "Link",
@@ -43,12 +45,14 @@ const data = {
         alt3: "",
 
         title: "OHSEA",
+        longTitle: "Ontario High School Esports Association",
         desc: "OHSEA leads in high school esports opportunities. Designed & Developed.",
 
         tool1: "React",
         tool2: "Gatsby",
         tool3: "SCSS",
-        tool4: "None",
+        tool4: "Figma",
+        tool5: "Netlify",
 
         icon1: "Github",
         icon2: "Link",
