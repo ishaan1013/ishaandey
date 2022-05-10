@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 // import Link from 'next/link'
 import Navbar from '../components/navbar'
@@ -8,6 +9,8 @@ import Circle from '../components/circle'
 import About from "../components/landing/about"
 import UseAnimations from "react-useanimations";
 import arrowDown from 'react-useanimations/lib/arrowDown';
+
+import BgEffect from "../assets/bgEffect.svg"
 
 export default function Home() {
   return (
@@ -23,6 +26,9 @@ export default function Home() {
       <div className="container">
         
         <main className="main">
+          <div className="bg-effect1">
+            <Image src={BgEffect} width={700} height={272} />
+          </div>
           <Circle/>
 
           <h1 className={styles.title}>

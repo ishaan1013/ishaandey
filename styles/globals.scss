@@ -168,11 +168,11 @@
 }
 
 html {
-  background-color: #131313;
+  background-color: #0e0e0e;
 }
 
 ::-webkit-scrollbar {
-  width: 18px;
+  width: 16px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -237,7 +237,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #131313dd;
+  background-color: #0e0e0edd;
   backdrop-filter: blur(10px);
   z-index: 1;
 
@@ -356,6 +356,19 @@ img {
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.67,0,.34,.98);
 }
+
+.bg-effect1 {
+  user-select: none;
+  -webkit-user-drag: none;
+  margin-top: 100px;
+  margin-left: 50px;
+  position: absolute;
+
+  span {
+    transform: rotate(-15deg);
+  }
+}
+
 
 @keyframes pulse {
   from {
