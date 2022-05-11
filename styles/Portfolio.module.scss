@@ -36,7 +36,6 @@
     align-items: center;
     border: 1px #ffffff55 solid;
     .appDisplayItem {
-        user-select: none;
         position: absolute;
         transform: skew(0deg, 0deg);
         transition: all 0.6s ease-in-out;
@@ -48,7 +47,6 @@
         }
     }
     .siteDisplayItem {
-        user-select: none;
         position: absolute;
         transform: skew(0deg, 0deg);
         transition: all 0.6s ease-in-out;
@@ -87,7 +85,6 @@
         margin: 0.2em;
         border: 1px #ffffff22 solid;
         border-radius: 25px;
-        user-select: none;
     }
 
     .links {
@@ -102,7 +99,6 @@
         border: 1px #ffffff44 solid;
         background-color:#ffffff0a;
         border-radius: 20px;
-        user-select: none;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         display: flex;

@@ -1,7 +1,12 @@
-.subtitle {
-  * {
-    user-select: none;
-  }
+.landingContainer {
+  background: rgb(255,255,255);
+  background: linear-gradient(313deg, rgba(255,255,255,0.005) 0%, rgba(255,255,255,0.03) 100%), url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect opacity='1%' width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  width: calc(100vw - 70px);
+  height: calc(100vh - 45px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
 }
 
 .title {
@@ -10,8 +15,9 @@
   line-height: 1.15;
   font-size: 6rem;
   text-align: center;
-
-  mix-blend-mode: difference;
+  color: #ffffff;
+  letter-spacing: 2px;
+  
 
   @media screen and (max-width: 1024px) {
     font-size: 4.5rem;
@@ -21,20 +27,50 @@
   }
 
   span {
-    color: #ffffff;
-    cursor: default;
-    // &:hover {
-    //   color: transparent;
-    //   -webkit-text-stroke: 1.5px #ffffffee;
-    //   span {
-    //     color: transparent;
-    //     -webkit-text-stroke: 1.5px #ffffffee;
-    //   }
-    // }
+    display: inline-block
+  }
 
-    span {
-      letter-spacing: 5px;
-    }
+  .name1 {
+    animation: fall1 1s cubic-bezier(.04,.56,.26,.99);
+  }
+  .name2 {
+    animation: fall2 1.2s cubic-bezier(.23,.77,.61,.93);
+  }
+}
+
+@keyframes fall1 {
+  0% {
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.03;
+  }
+  50% {
+    transform: translate(0, -40px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fall2 {
+  0% {
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.03;
+  }
+  52% {
+    transform: translate(0, -40px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
   }
 }
 
@@ -47,6 +83,7 @@
 
   p {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .arrow {
@@ -85,7 +122,6 @@
   animation: inf-track 7s linear infinite;
   div {
     font-size: 1.2rem;
-    user-select: none;
   }
 }
 
@@ -100,8 +136,6 @@
 .about {
   min-height: 100vh;
   padding: 0;
-  overflow-y: hidden;
-  overflow-x: visible;
   margin-top: 100px;
   .abtFlex {
     display: flex;
@@ -160,7 +194,6 @@
         margin: 0;
         .copyText {
           cursor: default;
-          user-select: none;
           text-align: center;
           width: 100%;
           position: absolute;
@@ -220,7 +253,6 @@
 
   //   div {
   //     font-size: 1.2rem;
-  //     user-select: none;
   //   }
   // }
 }
