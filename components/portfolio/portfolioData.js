@@ -1,9 +1,12 @@
 import taDisplay1 from '../../assets/ta1.png'
 import taDisplay2 from '../../assets/ta3.png'
 import taDisplay3 from '../../assets/ta5.png'
+import taDisplay4 from '../../assets/ta2.png'
+import taDisplay5 from '../../assets/ta4.png'
 
 import ohseaDisplay1 from '../../assets/ohsea1.png'
 import ohseaDisplay2 from '../../assets/ohsea3.png'
+import ohseaDisplay3 from '../../assets/ohsea2.png'
 
 import styles from "../../styles/Portfolio.module.scss"
 
@@ -14,9 +17,13 @@ const data = {
         img1: taDisplay1,
         img2: taDisplay2,
         img3: taDisplay3,
+        img4: taDisplay4,
+        img5: taDisplay5,
         alt1: "teachassist app 1",
         alt2: "teachassist app 2",
         alt3: "teachassist app 3",
+        alt3: "teachassist app 4",
+        alt3: "teachassist app 5",
 
         title: "TeachAssist App",
         longTitle: "TeachAssist App",
@@ -39,7 +46,7 @@ const data = {
         class: styles.ohseaDisplay,
         img1: ohseaDisplay1,
         img2: ohseaDisplay2,
-        img3: "",
+        img3: ohseaDisplay3,
         alt1: "ohsea site 1",
         alt2: "ohsea site 2",
         alt3: "",

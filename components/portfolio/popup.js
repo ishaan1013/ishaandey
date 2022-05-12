@@ -11,6 +11,10 @@ import { IoLogoAppleAppstore } from 'react-icons/io5'
 import ohsea1 from '../../assets/ohsea1.png'
 import ohsea2 from '../../assets/ohsea2.png'
 import ohsea3 from '../../assets/ohsea3.png'
+import ta1 from '../../assets/ta1.png'
+import ta2 from '../../assets/ta2.png'
+import ta3 from '../../assets/ta3.png'
+import ta4 from '../../assets/ta4.png'
 
 function Tool(props) {
     if (props.data !== "None") {
@@ -65,6 +69,98 @@ function LinkBtn(props) {
     }
 }
 
+function ImgDisplay(props) {
+    if (props.data.type === "site") {    
+        return (
+            <div className={styles.imageWrapper}>
+                <div className={styles.image}>
+                    <Image
+                        src={props.data.img1}
+                        layout="fill"
+                        objectFit="contain"
+                        alt={"alt"}
+                        priority
+                    />
+                </div>
+                <div className={styles.image}>
+                    <Image
+                        src={props.data.img2}
+                        layout="fill"
+                        objectFit="contain"
+                        alt={"alt"}
+                        priority
+                    />
+                </div>
+                <div className={styles.image}>
+                    <Image
+                        src={props.data.img3}
+                        layout="fill"
+                        objectFit="contain"
+                        alt={"alt"}
+                        priority
+                    />
+                </div>
+            </div>
+        )
+    }
+
+    if (props.data.type === "app") {    
+        return (
+            <div className={styles.imageWrapper}>
+                <div className={styles.appWrapper}>
+                    <div className={styles.image}>
+                        <Image
+                            src={props.data.img1}
+                            layout="fill"
+                            objectFit="contain"
+                            alt={"alt"}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={props.data.img2}
+                            layout="fill"
+                            objectFit="contain"
+                            alt={"alt"}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={props.data.img3}
+                            layout="fill"
+                            objectFit="contain"
+                            alt={"alt"}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={props.data.img4}
+                            layout="fill"
+                            objectFit="contain"
+                            alt={"alt"}
+                            priority
+                        />
+                    </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={props.data.img5}
+                            layout="fill"
+                            objectFit="contain"
+                            alt={"alt"}
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    return null
+}
+
 export default function Popup(props) { 
 
     return(
@@ -77,35 +173,7 @@ export default function Popup(props) {
                 <div onClick={() => props.setPopup(false)}>
                     <IoClose className={styles.close} />
                 </div>
-                <div className={styles.imageWrapper}>
-                    <div className={styles.image}>
-                        <Image
-                            src={ohsea1}
-                            layout="fill"
-                            objectFit="contain"
-                            alt={"alt"}
-                            priority
-                        />
-                    </div>
-                    <div className={styles.image}>
-                        <Image
-                            src={ohsea2}
-                            layout="fill"
-                            objectFit="contain"
-                            alt={"alt"}
-                            priority
-                        />
-                    </div>
-                    <div className={styles.image}>
-                        <Image
-                            src={ohsea3}
-                            layout="fill"
-                            objectFit="contain"
-                            alt={"alt"}
-                            priority
-                        />
-                    </div>
-                </div>
+                <ImgDisplay data={props.data}/>
                 <div className={styles.info}>
                     <h1>{props.data.longTitle}</h1>
                     <p>
