@@ -13,7 +13,7 @@
   letter-spacing: 1px;
   margin: 0 0 20px 0;
   line-height: 1.15;
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
   color: #ffffff;
   letter-spacing: 2px;
@@ -140,11 +140,11 @@
   .abtFlex {
     display: flex;
     min-height: 100vh;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
   .left {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +200,7 @@
           left: 0;
           top: 40px;
           
-          background: -webkit-linear-gradient(0deg, rgb(94, 182, 202) 0%, rgb(152, 84, 173) 100%);
+          background: -webkit-linear-gradient(0deg, rgb(90, 176, 111) 0%, rgb(152, 84, 173) 100%);
           background-clip: text;
           -webkit-text-fill-color: transparent;
           font-size: 1rem;
@@ -217,8 +217,8 @@
   }
 
   .right {
-    width: 370px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -236,9 +236,9 @@
       width: 80%;
     }
     
-    .imgContainer * {
+    /* .imgContainer * {
       border-radius: 50px;
-    }
+    } */
 
   }
 

@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
+import AboutImg from "./aboutImg"
 import styles from '../../styles/Home.module.scss'
 import { useState } from 'react'
-import personalPhoto from '../../assets/personalPhoto.jpg'
+import personalPhoto from '../../assets/personalPhoto3.jpg'
 
 function useHover() {
   const [hovering, setHovering] = useState(false)
@@ -74,14 +75,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.imgContainer}>
-                        <Image
-                            src={personalPhoto}
-                            width={600}
-                            height={815}
-                            placeholder="blur"
-                        />
-                    </div>
+                    <AboutImg />
                     {/* <div className={styles.trackRotate}>
                         <div className={styles.track}>
                             <div>
