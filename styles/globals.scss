@@ -369,6 +369,15 @@ img {
   }
 }
 
+.bg-effect2 {
+  position: absolute;
+  z-index: -1;
+
+  span {
+    transform: rotate(-15deg);
+  }
+}
+
 
 @keyframes pulse {
   from {

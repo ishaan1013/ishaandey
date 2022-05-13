@@ -3,7 +3,8 @@ import Image from 'next/image'
 import AboutImg from "./aboutImg"
 import styles from '../../styles/Home.module.scss'
 import { useState } from 'react'
-import personalPhoto from '../../assets/personalPhoto3.jpg'
+import BgEffect from "../../assets/bgEffect2.svg"
+
 
 function useHover() {
   const [hovering, setHovering] = useState(false)
@@ -41,6 +42,9 @@ export default function About() {
         <section className={styles.about}>
             <div className={styles.abtFlex}>
                 <div className={styles.left}>
+                    <div className="bg-effect2">
+                        <Image src={BgEffect} width={700} height={272} />
+                    </div>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
