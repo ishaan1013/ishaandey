@@ -1,15 +1,15 @@
 import Navbar from '../components/navbar'
 import Circle from '../components/circle'
-import styles from '../styles/Portfolio.module.scss'
+import styles from '../styles/Projects.module.scss'
 
-import PortfolioItem from '../components/portfolio/portfolioItem'
-import Popup from '../components/portfolio/popup'
-import data from '../components/portfolio/portfolioData'
+import ProjectItem from '../components/projects/projectItem'
+import Popup from '../components/projects/popup'
+import data from '../components/projects/projectData'
 
 import { useState } from 'react'
 
 
-export default function Portfolio() {
+export default function Projects() {
     const [popup, setPopup] = useState(false)
     const [content, setContent] = useState("")
 
@@ -44,14 +44,14 @@ export default function Portfolio() {
                     <Circle/>
                     <div className={styles.gridContainer}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
-                            <PortfolioItem 
+                            <ProjectItem 
                                 data={data.taData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI2}`}>
-                            <PortfolioItem 
+                            <ProjectItem 
                                 data={data.ohseaData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
@@ -63,10 +63,10 @@ export default function Portfolio() {
                     </div>
                     {/* <div className={styles.gridContainer}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
-                            <PortfolioItem data={data.taData}/>
+                            <ProjectItem data={data.taData}/>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI2}`}>
-                            <PortfolioItem data={data.ohseaData}/>
+                            <ProjectItem data={data.ohseaData}/>
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
 

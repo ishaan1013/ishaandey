@@ -8,7 +8,7 @@ import ohseaDisplay1 from '../../assets/ohsea1.png'
 import ohseaDisplay2 from '../../assets/ohsea3.png'
 import ohseaDisplay3 from '../../assets/ohsea2.png'
 
-import styles from "../../styles/Portfolio.module.scss"
+import styles from "../../styles/Projects.module.scss"
 
 const data = {
     taData: {
@@ -27,12 +27,14 @@ const data = {
 
         title: "TeachAssist App",
         longTitle: "TeachAssist App",
-        desc: "Advanced tools for high school students for academic success. Designed & developed.",
+        desc1: "The unofficial YRDSB (York Region District School Board) TeachAssist app provides high school students with advanced tools for academic success. This app was created to give students access to their marks, guidance appointments, and other academic data in a convenient way.",
+        desc2: "Top 100 education apps in the world on Apple's charts. 300+ downloads.",
+        desc3: "Designed, developed, and marketed. Reached 5000+ high school students.",
 
         tool1: "React Native",
         tool2: "Expo",
-        tool3: "Figma",
-        tool4: "None",
+        tool3: "Heroku",
+        tool4: "Figma",
         tool5: "None",
         icon1: "Github",
         icon2: "Appstore",
@@ -53,7 +55,9 @@ const data = {
 
         title: "OHSEA",
         longTitle: "Ontario High School Esports Association",
-        desc: "OHSEA leads in high school esports opportunities. Designed & Developed.",
+        desc1: "OHSEA (Ontario High School Esports Association) is a student-run organization that provides a platform for high school students to participate in esports tournaments. Run by high school & university students dedicated to bringing.",
+        desc2: "Amassed a very large community & ran events with hundreds of students.",
+        desc3: "Designed and developed myself. Also organized events with the team.",
 
         tool1: "React",
         tool2: "Gatsby",

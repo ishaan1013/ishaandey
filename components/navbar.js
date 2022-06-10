@@ -48,7 +48,7 @@ export default function Navbar() {
                         <li>
                             <AboutNav/>
                         </li>
-                        <li><Link href="/portfolio">Portfolio</Link></li>
+                        <li><Link href="/projects">Projects</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <li>
                     <AboutNav/>
                 </li>
-                <li><Link href="/portfolio">Portfolio</Link></li>
+                <li><Link href="/projects">Projects</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>

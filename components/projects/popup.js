@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import styles from '../../styles/PortfolioPopup.module.scss'
+import styles from '../../styles/ProjectsPopup.module.scss'
 
 import { IoClose } from "react-icons/io5";
 // import { IoLogoAppleAppstore } from 'react-icons/io5'
@@ -177,9 +177,18 @@ export default function Popup(props) {
                 <div className={styles.info}>
                     <h1>{props.data.longTitle}</h1>
                     <p>
-                        {props.data.desc}
+                        {props.data.desc1}
                     </p>
-
+                    { props.data.desc2 !== "None" &&
+                    <p>
+                        {props.data.desc2}
+                    </p>
+                    }
+                    { props.data.desc3 !== "None" &&
+                    <p>
+                        {props.data.desc3}
+                    </p>
+                    }
                     <div className={styles.tools}>
                         <Tool data={props.data.tool1} />
                         <Tool data={props.data.tool2} />

@@ -4,7 +4,7 @@ import { IoLogoAppleAppstore } from 'react-icons/io5'
 import { IoLogoGithub } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
-import styles from '../../styles/Portfolio.module.scss'
+import styles from '../../styles/Projects.module.scss'
 
 function Displays(props) {
     if (props.data.type === "app") {
@@ -115,7 +115,7 @@ function LinkBtn(props) {
 }
 
 
-export default function PortfolioItem(props) {  
+export default function ProjectItem(props) {  
 
     function SeeMoreFunc() {
         props.setPopup(true)
