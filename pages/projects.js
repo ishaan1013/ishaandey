@@ -31,6 +31,14 @@ export default function Projects() {
                     />
                 )
             }
+            if (content == "Personal Site") {
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.personalSiteData}
+                    />
+                )
+            }
         }
 
         return null
@@ -58,7 +66,11 @@ export default function Projects() {
                             />
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
-
+                            <ProjectItem 
+                                data={data.personalSiteData} 
+                                setPopup={setPopup}
+                                setContent={setContent}
+                            />
                         </div>
                     </div>
                     {/* <div className={styles.gridContainer}>
