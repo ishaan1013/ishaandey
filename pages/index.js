@@ -12,7 +12,9 @@ import About from "../components/landing/about"
 import UseAnimations from "react-useanimations";
 import arrowDown from 'react-useanimations/lib/arrowDown';
 
-import BgEffect from "../assets/bgEffect.svg"
+import BgEffect1 from "../assets/bgEffect.svg"
+import BgEffect3 from "../assets/bgEffect3.svg"
+import BgEffect4 from "../assets/bgEffect4.svg"
 
 export default function Home() {
 
@@ -25,7 +27,7 @@ export default function Home() {
   
   function changeStyle() {
       setContOpacity(0.8/((window.scrollY/200)+0.001))
-      setContBlur(window.scrollY/300)
+      setContBlur(window.scrollY/500)
   }
 
   const contStyle = {
@@ -47,8 +49,14 @@ export default function Home() {
         
         <main className="main">
           <section className={styles.landingContainer} style={contStyle}>
-            <div className="bg-effect1">
-              <Image src={BgEffect} width={700} height={272} />
+            {/* <div className="bg-effect1">
+              <Image src={BgEffect1} width={700} height={272} />
+            </div> */}
+            <div className="bg-effect3">
+              <Image src={BgEffect3} width={1000} height={1000} />
+            </div>
+            <div className="bg-effect4">
+              <Image src={BgEffect4} width={1000} height={1000} />
             </div>
             {/* <Circle/> */}
             <h1 className={styles.title}>
