@@ -8,6 +8,10 @@ import ohseaDisplay1 from '../../assets/ohsea1.png'
 import ohseaDisplay2 from '../../assets/ohsea3.png'
 import ohseaDisplay3 from '../../assets/ohsea2.png'
 
+import nutritionDisplay1 from '../../assets/nutrition1.png'
+import nutritionDisplay2 from '../../assets/nutrition3.png'
+import nutritionDisplay3 from '../../assets/nutrition2.png'
+
 import styles from "../../styles/Projects.module.scss"
 
 const data = {
@@ -84,8 +88,8 @@ const data = {
 
         title: "Personal Site",
         longTitle: "Personal Site",
-        desc1: "description!!!!!.",
-        desc2: "Designed with Figma, developed with React and Next.js.",
+        desc1: "description",
+        desc2: "",
         desc3: "",
 
         tool1: "React",
@@ -97,16 +101,16 @@ const data = {
         icon1: "Github",
         icon2: "None",
         icon3: "None",
-        link1: "https://github.com/ohseagg/ohsea.gg",
+        link1: "",
         link2: "",
         link3: "",
     },
     nutritionData: {
         type: "site",
         class: styles.ohseaDisplay,
-        img1: ohseaDisplay1,
-        img2: ohseaDisplay2,
-        img3: ohseaDisplay3,
+        img1: nutritionDisplay1,
+        img2: nutritionDisplay2,
+        img3: nutritionDisplay3,
         alt1: "nutrition tracker 1",
         alt2: "nutrition tracker 2",
         alt3: "",

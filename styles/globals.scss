@@ -359,6 +359,12 @@ img {
   animation-timing-function: cubic-bezier(.67,0,.34,.98);
 }
 
+.landing-blobs-wrapper {
+  animation: pulse2 5s infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.67,0,.34,.98);
+}
+
 .bg-effect1 {
   margin-top: 100px;
   margin-left: 50px;
@@ -375,12 +381,20 @@ img {
   left: -25vw;
   position: absolute;
   z-index: -1;
+
+  @media screen and (min-width: 1536px) {
+    left: -20vw;
+  }
 }
 .bg-effect4 {
   bottom: -35vh;
   right: -25vw;
   position: absolute;
   z-index: -1;
+
+  @media screen and (min-width: 1536px) {
+    right: -20vw;
+  }
 }
 
 .bg-effect2 {
@@ -401,5 +415,14 @@ img {
   to {
     box-shadow: 0 0 50px 5px #ffffff0c inset,
     0 0 50px 5px #ffffff0c;
+  }
+}
+
+@keyframes pulse2 {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
   }
 }

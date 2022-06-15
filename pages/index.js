@@ -52,11 +52,13 @@ export default function Home() {
             {/* <div className="bg-effect1">
               <Image src={BgEffect1} width={700} height={272} />
             </div> */}
-            <div className="bg-effect3">
-              <Image src={BgEffect3} width={1000} height={1000} />
-            </div>
-            <div className="bg-effect4">
-              <Image src={BgEffect4} width={1000} height={1000} />
+            <div className="landing-blobs-wrapper">
+              <div className="bg-effect3">
+                <Image src={BgEffect3} width={1000} height={1000} />
+              </div>
+              <div className="bg-effect4">
+                <Image src={BgEffect4} width={1000} height={1000} />
+              </div>
             </div>
             {/* <Circle/> */}
             <h1 className={styles.title}>
