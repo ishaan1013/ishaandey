@@ -1,7 +1,10 @@
+import { useRef } from 'react';
+
 import Navbar from '../components/navbar'
 import Blob from '../components/blob'
 import styles from '../styles/Contact.module.scss'
 
+import emailjs from '@emailjs/browser';
 import { Formik, Form, Field } from 'formik';
 import { RiErrorWarningLine } from 'react-icons/ri'
 import { FaRegCopy } from 'react-icons/fa'
@@ -35,13 +38,13 @@ export default function Contact() {
                     <Blob/>
                     <div className={styles.wrapper}>
                         <section className={styles.text}>
-                            <h1>Talk to me!</h1>
+                            {/* <h1>Talk to me!</h1>
                             <div className={styles.subText}>
                                 <p>Or DM me on Discord:<br className={styles.break}/> <span>@Aero#9241</span></p>
                                 <div className={styles.copyButton}>
                                     <FaRegCopy/>
                                 </div>
-                            </div>
+                            </div> */}
                         </section>
                         <section className={styles.formContainer}>
                             <Formik
@@ -51,7 +54,16 @@ export default function Contact() {
                             }}
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500));
-                                alert(JSON.stringify(values, null, 2));
+                                // alert(JSON.stringify(values, null, 2));
+                                // emailjs.send("service_ni0fe9s", "template_vcg3kmq", values, "pZy5n6T8cMbnB476w")
+                                // emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, values, "pZy5n6T8cMbnB476w")
+                                //     .then(function(response) {
+                                //     console.log('SUCCESS!'+JSON.stringify(values));
+                                //     }, function(error) {
+                                //     console.log('FAILED...', error);
+                                //     });
+                                console.log(process.env.SERVICE_ID)
+                                console.log(process.env.TEMPLATE_ID)
                             }}
                             validateOnChange={false}
                             validateOnBlur={false}
