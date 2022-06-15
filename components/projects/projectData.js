@@ -101,6 +101,35 @@ const data = {
         link2: "",
         link3: "",
     },
+    nutritionData: {
+        type: "site",
+        class: styles.ohseaDisplay,
+        img1: ohseaDisplay1,
+        img2: ohseaDisplay2,
+        img3: ohseaDisplay3,
+        alt1: "nutrition tracker 1",
+        alt2: "nutrition tracker 2",
+        alt3: "",
+
+        title: "Nutrition App",
+        longTitle: "Nutrition Tracker App",
+        desc1: "description!!!!!.",
+        desc2: "Nutrition.",
+        desc3: "",
+
+        tool1: "React",
+        tool2: "Next.js",
+        tool3: "TailwindCSS",
+        tool4: "Firebase",
+        tool5: "Figma",
+
+        icon1: "Github",
+        icon2: "Link",
+        icon3: "None",
+        link1: "https://github.com/ishaan1013/nutrition",
+        link2: "https://nutrition-ishaan1013.vercel.app/",
+        link3: "",
+    },
 }
 
 export default data

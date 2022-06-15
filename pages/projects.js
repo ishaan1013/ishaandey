@@ -39,6 +39,14 @@ export default function Projects() {
                     />
                 )
             }
+            if (content == "Nutrition App") { 
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.nutritionData}
+                    />
+                )
+            }
         }
 
         return null
@@ -67,7 +75,8 @@ export default function Projects() {
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
                             <ProjectItem 
-                                data={data.personalSiteData} 
+                                data={data.nutritionData} 
+                                // data={data.personalSiteData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />
