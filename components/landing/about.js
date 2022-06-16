@@ -46,10 +46,10 @@ export default function About() {
                         <Image src={BgEffect} width={900} height={372} />
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Hi, I'm Ishaan! 😄 
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        I'm a high school student in Canada taking an interest in software design & development. You can find me working on my latest projects 👨‍💻, at the gym 🏋🏽, lifeguarding 🏊🏽, or doing anything else I'm interested in. Feel free to reach out with the links below or through my contact page. I'd love to talk! 🤝
                     </div>
                     <div className={styles.socials}>
                         <a href="https://github.com/ishaan1013"
