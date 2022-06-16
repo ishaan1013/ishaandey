@@ -66,7 +66,7 @@ export default function Home() {
             {/* <Circle/> */}
             <h1 className={styles.title}>
               <span className={styles.name1}>ISHAAN</span>
-              &nbsp
+              &nbsp;
               <span className={styles.name2}>DEY</span>
             </h1>
             {/* <SwitchSubtitle/> */}
