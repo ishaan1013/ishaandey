@@ -1,3 +1,5 @@
+import Head from "next/head"
+import Favicon from "../public/favicon.ico"
 import Navbar from "../components/navbar"
 import Circle from "../components/circle"
 import styles from "../styles/Projects.module.scss"
@@ -67,6 +69,11 @@ export default function Projects() {
     
     return (
         <>
+            <Head>
+                <title>Projects</title>
+                <meta name="description" content="Ishaan's projects." />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Navbar/>
             <div className="container">
                 <main className={mainClass}>

@@ -1,4 +1,6 @@
 import { useRef } from "react"
+import Head from "next/head"
+import Favicon from "../public/favicon.ico"
 
 import Navbar from "../components/navbar"
 import Circle from "../components/circle"
@@ -32,6 +34,11 @@ export default function Contact() {
 
     return (
         <>
+            <Head>
+                <title>Contact</title>
+                <meta name="description" content="Ishaan's contact page." />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Navbar/>
             <div className="container">
                 <main className="main">
@@ -55,7 +62,7 @@ export default function Contact() {
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500))
                                 // alert(JSON.stringify(values, null, 2))
-                                emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, values, process.env.PUBLIC_KEY)
+                                emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, values, process.env.NEXT_PUBLIC_PUBLIC_KEY)
                                     .then(function(response) {
                                     // console.log("SUCCESS!"+JSON.stringify(values))
                                     }, function(error) {
@@ -70,7 +77,8 @@ export default function Contact() {
                             {({ errors, touched, isValidating }) => (
                             <Form>
                                 <div className={styles.inputField}>
-                                    <label htmlFor="email">Email Address</label>
+                                    {/* <label htmlFor="email">Email Address</label> */}
+                                    <label htmlFor="email">{process.env.NEXT_PUBLIC_SERVICE_ID}</label>
                                     <Field
                                     id="email"
                                     name="email"

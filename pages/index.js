@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Favicon from "../public/favicon.ico"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
@@ -39,7 +40,7 @@ export default function Home() {
     <>
       <Head>
         <title>Ishaan Dey</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Ishaan's personal website." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
