@@ -1,11 +1,13 @@
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
+import { useMediaPredicate } from "react-media-hook";
 
 import styles from '../../styles/Home.module.scss'
-import { useState, useEffect } from 'react'
 import personalPhoto from '../../assets/personalPhoto3.jpg'
 
 export default function AboutImg() {
     const [imgTranslate, setImgTranslate] = useState(100)
+    const biggerThan400 = useMediaPredicate("(min-width: 400px)");
 
     useEffect(() => {
         window.addEventListener("scroll", changeStyle);
@@ -26,8 +28,6 @@ export default function AboutImg() {
         >
             <Image
                 src={personalPhoto}
-                width={475}
-                height={450}
                 placeholder="blur"
             />
         </div>

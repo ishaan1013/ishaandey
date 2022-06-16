@@ -140,10 +140,20 @@
   min-height: 100vh;
   padding: 0;
   margin-top: 100px;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    margin-top: 200px;
+  }
+
   .abtFlex {
     display: flex;
     min-height: 100vh;
     justify-content: space-between;
+    
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   .left {
@@ -153,12 +163,32 @@
     justify-content: center;
     min-height: 100%;
 
+    @media screen and (max-width: 1536px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 85%;
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 90%;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 500px) {
+      /* width: 100%; */
+      margin-top: 25px;
+    }
+
     div {
       font-size: 1.15rem;
       line-height: 1.5em;
       margin: 1em 0;
       font-weight: 300;
 
+      @media screen and (max-width: 1280px) {
+        font-size: 1rem;
+        line-height: 1.8em;
+      }
       @media screen and (max-width: 768px) {
         font-size: 1.1rem;
       }
@@ -173,6 +203,11 @@
       align-items: center;
       height: 100px;
 
+      @media screen and (max-width: 768px) {
+        margin-top: 2em;
+        flex-direction: column;
+      }
+
       * {
         margin: 0 2em 0 0;
         font-size: 1.4rem;
@@ -183,16 +218,28 @@
 
         @media screen and (max-width: 768px) {
           font-size: 1.3rem;
+          margin: 0.2em 0;
         }
         @media screen and (max-width: 500px) {
           font-size: 1.2rem;
         }
       }
-      a:hover {
-        transition: all 0.1s; 
-        transform: translate(0, 2px);
+      @media screen and (min-width: 769px) {
+        a:hover {
+          transition: all 0.1s; 
+          transform: translate(0, 2px);
+        }
+      }
+      p {
+        text-align: center;
+        @media screen and (min-width: 769px) {
+          display: none;
+        }
       }
       div {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
         position: relative;
         margin: 0;
         .copyText {
@@ -225,16 +272,17 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    width: 30%;
 
+    @media screen and (max-width: 1536px) {
+      width: 37%;
+    }
     @media screen and (max-width: 768px) {
-      flex-direction: column-reverse;
       width: 60%;
     }
-
     @media screen and (max-width: 500px) {
       width: 70%;
     }
-    
     @media screen and (max-width: 500px) {
       width: 80%;
     }

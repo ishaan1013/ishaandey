@@ -64,6 +64,11 @@ export default function About() {
                         >
                             LINKEDIN
                         </a>
+                        <p
+                        onClick={() => {navigator.clipboard.writeText("Aero#9241");}}
+                        >
+                            DISCORD<br/>(CLICK TO COPY)
+                        </p>
                         <div>
                             <div 
                             {...textHoverProps}
