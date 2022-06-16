@@ -67,7 +67,7 @@ export default function About() {
                         <p
                         onClick={() => {navigator.clipboard.writeText("Aero#9241");}}
                         >
-                            DISCORD<br/><span>(CLICK TO COPY)</span>
+                            DISCORD<br/><span>Aero#9241<br/>(CLICK TO COPY)</span>
                         </p>
                         <div>
                             <div 

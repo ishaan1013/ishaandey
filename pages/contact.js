@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import Navbar from '../components/navbar'
-import Blob from '../components/blob'
+import Circle from '../components/circle'
 import styles from '../styles/Contact.module.scss'
 
 import emailjs from '@emailjs/browser';
@@ -35,7 +35,7 @@ export default function Contact() {
             <Navbar/>
             <div className="container">
                 <main className="main">
-                    <Blob/>
+                    <Circle contact/>
                     <div className={styles.wrapper}>
                         <section className={styles.text}>
                             <h1>Talk to me!</h1>

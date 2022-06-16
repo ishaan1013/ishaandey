@@ -1,23 +1,29 @@
 import { useState, useEffect } from 'react'
 
-export default function Circle() {
+export default function Circle(props) {
 
-    const [circleOpacity, setCircleOpacity] = useState(0.8)
-    const [circleBlur, setCircleBlur] = useState(0)
+    // const [circleOpacity, setCircleOpacity] = useState(0.8)
+    // const [circleBlur, setCircleBlur] = useState(0)
+    const [circleStyle, setCircleStyle] = useState({})
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", changeStyle);
+    // }, []);
+    
+    // function changeStyle() {
+    //     setCircleOpacity(0.8/((window.scrollY/30)+0.001))
+    //     setCircleBlur(window.scrollY/400)
+    // }
+
 
     useEffect(() => {
-        window.addEventListener("scroll", changeStyle);
-    }, []);
-    
-    function changeStyle() {
-        setCircleOpacity(0.8/((window.scrollY/30)+0.001))
-        setCircleBlur(window.scrollY/400)
-    }
-
-    const circleStyle = {
-        // opacity: circleOpacity,
-        filter: "blur("+circleBlur+"px)",
-    }
+        if (props.contact) {
+            setCircleStyle({opacity: 0.5, filter: "blur(10px)"})
+        }
+        else {
+            setCircleStyle({})      
+        }
+    }, [])
 
     return(
         <>

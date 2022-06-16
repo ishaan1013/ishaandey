@@ -240,8 +240,12 @@
       p {
         text-align: center;
         span {
-          font-size: 1rem;
+          font-size: 0.8rem;
+          line-height: 1em;
           font-weight: 400;
+          background: -webkit-linear-gradient(0deg, rgb(90, 176, 111) 0%, rgb(152, 84, 173) 100%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         @media screen and (min-width: 769px) {
