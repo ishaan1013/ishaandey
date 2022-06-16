@@ -1,20 +1,20 @@
-import taDisplay1 from '../../assets/ta1.png'
-import taDisplay2 from '../../assets/ta3.png'
-import taDisplay3 from '../../assets/ta5.png'
-import taDisplay4 from '../../assets/ta2.png'
-import taDisplay5 from '../../assets/ta4.png'
+import taDisplay1 from "../../assets/ta1.png"
+import taDisplay2 from "../../assets/ta3.png"
+import taDisplay3 from "../../assets/ta5.png"
+import taDisplay4 from "../../assets/ta2.png"
+import taDisplay5 from "../../assets/ta4.png"
 
-import ohseaDisplay1 from '../../assets/ohsea1.png'
-import ohseaDisplay2 from '../../assets/ohsea3.png'
-import ohseaDisplay3 from '../../assets/ohsea2.png'
+import ohseaDisplay1 from "../../assets/ohsea1.png"
+import ohseaDisplay2 from "../../assets/ohsea3.png"
+import ohseaDisplay3 from "../../assets/ohsea2.png"
 
-import nutritionDisplay1 from '../../assets/nutrition1.png'
-import nutritionDisplay2 from '../../assets/nutrition3.png'
-import nutritionDisplay3 from '../../assets/nutrition2.png'
+import nutritionDisplay1 from "../../assets/nutrition1.png"
+import nutritionDisplay2 from "../../assets/nutrition3.png"
+import nutritionDisplay3 from "../../assets/nutrition2.png"
 
-import personalSiteDisplay1 from '../../assets/personalSite1.png'
-import personalSiteDisplay2 from '../../assets/personalSite3.png'
-import personalSiteDisplay3 from '../../assets/personalSite2.png'
+import personalSiteDisplay1 from "../../assets/personalSite1.png"
+import personalSiteDisplay2 from "../../assets/personalSite3.png"
+import personalSiteDisplay3 from "../../assets/personalSite2.png"
 
 import styles from "../../styles/Projects.module.scss"
 

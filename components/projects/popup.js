@@ -1,20 +1,20 @@
-import Image from 'next/image'
+import Image from "next/image"
 
-import styles from '../../styles/ProjectsPopup.module.scss'
+import styles from "../../styles/ProjectsPopup.module.scss"
 
-import { IoClose } from "react-icons/io5";
-// import { IoLogoAppleAppstore } from 'react-icons/io5'
-import { IoLogoGithub } from 'react-icons/io5'
-import { HiOutlineExternalLink } from 'react-icons/hi'
-import { IoLogoAppleAppstore } from 'react-icons/io5'
+import { IoClose } from "react-icons/io5"
+// import { IoLogoAppleAppstore } from "react-icons/io5"
+import { IoLogoGithub } from "react-icons/io5"
+import { HiOutlineExternalLink } from "react-icons/hi"
+import { IoLogoAppleAppstore } from "react-icons/io5"
 
-import ohsea1 from '../../assets/ohsea1.png'
-import ohsea2 from '../../assets/ohsea2.png'
-import ohsea3 from '../../assets/ohsea3.png'
-import ta1 from '../../assets/ta1.png'
-import ta2 from '../../assets/ta2.png'
-import ta3 from '../../assets/ta3.png'
-import ta4 from '../../assets/ta4.png'
+import ohsea1 from "../../assets/ohsea1.png"
+import ohsea2 from "../../assets/ohsea2.png"
+import ohsea3 from "../../assets/ohsea3.png"
+import ta1 from "../../assets/ta1.png"
+import ta2 from "../../assets/ta2.png"
+import ta3 from "../../assets/ta3.png"
+import ta4 from "../../assets/ta4.png"
 
 function Tool(props) {
     if (props.data !== "None") {

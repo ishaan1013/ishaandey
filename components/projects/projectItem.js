@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import Image from "next/image"
 
-import { IoLogoAppleAppstore } from 'react-icons/io5'
-import { IoLogoGithub } from 'react-icons/io5'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { IoLogoAppleAppstore } from "react-icons/io5"
+import { IoLogoGithub } from "react-icons/io5"
+import { HiOutlineExternalLink } from "react-icons/hi"
 
-import styles from '../../styles/Projects.module.scss'
+import styles from "../../styles/Projects.module.scss"
 
 function Displays(props) {
     if (props.data.type === "app") {

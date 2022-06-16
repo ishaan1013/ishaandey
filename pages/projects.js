@@ -1,12 +1,12 @@
-import Navbar from '../components/navbar'
-import Circle from '../components/circle'
-import styles from '../styles/Projects.module.scss'
+import Navbar from "../components/navbar"
+import Circle from "../components/circle"
+import styles from "../styles/Projects.module.scss"
 
-import ProjectItem from '../components/projects/projectItem'
-import Popup from '../components/projects/popup'
-import data from '../components/projects/projectData'
+import ProjectItem from "../components/projects/projectItem"
+import Popup from "../components/projects/popup"
+import data from "../components/projects/projectData"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
 
 export default function Projects() {

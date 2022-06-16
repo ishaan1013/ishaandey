@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { StaggerTextChange } from "stagger-text-reveal-animation";
-import styles from '../../styles/Home.module.scss'
+import React, { useState, useEffect } from "react"
+import { StaggerTextChange } from "stagger-text-reveal-animation"
+import styles from "../../styles/Home.module.scss"
 
 export default function Subtitle() {
     return (

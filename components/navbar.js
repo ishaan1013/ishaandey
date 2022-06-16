@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
-import { IoMenu, IoClose } from "react-icons/io5";
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { useState } from "react"
+import { IoMenu, IoClose } from "react-icons/io5"
 
 export default function Navbar() {
     const { asPath } = useRouter()
-    const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(false)
 
     const scroll = () => {
         window.scroll({
@@ -15,7 +15,7 @@ export default function Navbar() {
     }
 
     function AboutNav() {
-        if (asPath === '/') {
+        if (asPath === "/") {
             return (
                 <div
                 onClick={scroll}

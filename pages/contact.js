@@ -1,34 +1,34 @@
-import { useRef } from 'react';
+import { useRef } from "react"
 
-import Navbar from '../components/navbar'
-import Circle from '../components/circle'
-import styles from '../styles/Contact.module.scss'
+import Navbar from "../components/navbar"
+import Circle from "../components/circle"
+import styles from "../styles/Contact.module.scss"
 
-import emailjs from '@emailjs/browser';
-import { Formik, Form, Field } from 'formik';
-import { RiErrorWarningLine } from 'react-icons/ri'
-import { FaRegCopy } from 'react-icons/fa'
+import emailjs from "@emailjs/browser"
+import { Formik, Form, Field } from "formik"
+import { RiErrorWarningLine } from "react-icons/ri"
+import { FaRegCopy } from "react-icons/fa"
 
 function validateEmail(value) {
-    let error;
+    let error
     if (!value) {
-        error = 'Your email is required.';
+        error = "Your email is required."
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-        error = 'Invalid email address.';
+        error = "Invalid email address."
     }
-    return error;
+    return error
 }
   
 function validateMessage(value) {
-    let error;
+    let error
     if (value.length < 10) {
-        error = 'Your message is too short.';
+        error = "Your message is too short."
     }
-    return error;
+    return error
 }
 
 export default function Contact() {
-    const form = useRef();
+    const form = useRef()
 
     return (
         <>
@@ -49,18 +49,18 @@ export default function Contact() {
                         <section className={styles.formContainer}>
                             <Formik
                             initialValues={{
-                                email: '',
-                                msg: '',
+                                email: "",
+                                msg: "",
                             }}
                             onSubmit={async (values) => {
-                                await new Promise((r) => setTimeout(r, 500));
-                                // alert(JSON.stringify(values, null, 2));
+                                await new Promise((r) => setTimeout(r, 500))
+                                // alert(JSON.stringify(values, null, 2))
                                 emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, values, process.env.PUBLIC_KEY)
                                     .then(function(response) {
-                                    // console.log('SUCCESS!'+JSON.stringify(values));
+                                    // console.log("SUCCESS!"+JSON.stringify(values))
                                     }, function(error) {
-                                    // console.log('FAILED...', error);
-                                    });
+                                    // console.log("FAILED...", error)
+                                    })
                                 // console.log(process.env.SERVICE_ID)
                                 // console.log(process.env.TEMPLATE_ID)
                             }}
