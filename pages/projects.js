@@ -6,12 +6,25 @@ import ProjectItem from '../components/projects/projectItem'
 import Popup from '../components/projects/popup'
 import data from '../components/projects/projectData'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 export default function Projects() {
     const [popup, setPopup] = useState(false)
     const [content, setContent] = useState("")
+    const [mainClass, setMainClass] = useState(styles.main)
+    const [gridClass, setGridClass] = useState(styles.gridContainer)
+
+    useEffect(() => {
+        if (popup) {
+            setMainClass(styles.mainNoScroll)
+            setGridClass(styles.gridContainerNoScroll)
+        }
+        else {
+            setMainClass(styles.main)
+            setGridClass(styles.gridContainer)
+        }
+    }, [popup])
 
     function ShowPopup() {
         if (popup) {
@@ -56,9 +69,9 @@ export default function Projects() {
         <>
             <Navbar/>
             <div className="container">
-                <main className={styles.main}>
+                <main className={mainClass}>
                     <Circle/>
-                    <div className={styles.gridContainer}>
+                    <div className={gridClass}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
                             <ProjectItem 
                                 data={data.taData} 

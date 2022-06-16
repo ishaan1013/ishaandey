@@ -176,19 +176,21 @@ export default function Popup(props) {
                 <ImgDisplay data={props.data}/>
                 <div className={styles.info}>
                     <h1>{props.data.longTitle}</h1>
-                    <p>
-                        {props.data.desc1}
-                    </p>
-                    { props.data.desc2 !== "None" &&
-                    <p>
-                        {props.data.desc2}
-                    </p>
-                    }
-                    { props.data.desc3 !== "None" &&
-                    <p>
-                        {props.data.desc3}
-                    </p>
-                    }
+                    <div className={styles.descWrapper}>
+                        <p>
+                            {props.data.desc1}
+                        </p>
+                        { props.data.desc2 !== "None" &&
+                        <p>
+                            {props.data.desc2}
+                        </p>
+                        }
+                        { props.data.desc3 !== "None" &&
+                        <p>
+                            {props.data.desc3}
+                        </p>
+                        }
+                    </div>
                     <div className={styles.tools}>
                         <Tool data={props.data.tool1} />
                         <Tool data={props.data.tool2} />
