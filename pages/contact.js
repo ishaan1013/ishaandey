@@ -38,13 +38,13 @@ export default function Contact() {
                     <Blob/>
                     <div className={styles.wrapper}>
                         <section className={styles.text}>
-                            {/* <h1>Talk to me!</h1>
+                            <h1>Talk to me!</h1>
                             <div className={styles.subText}>
                                 <p>Or DM me on Discord:<br className={styles.break}/> <span>@Aero#9241</span></p>
                                 <div className={styles.copyButton}>
                                     <FaRegCopy/>
                                 </div>
-                            </div> */}
+                            </div>
                         </section>
                         <section className={styles.formContainer}>
                             <Formik

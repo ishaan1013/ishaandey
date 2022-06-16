@@ -44,10 +44,13 @@ export default function Home() {
       </Head>
 
       <Navbar/>
+
         
       <div className="container">
         
         <main className="main">
+          <Blob className={styles.blobLanding} landing />
+
           <section className={styles.landingContainer} style={contStyle}>
             {/* <div className="bg-effect1">
               <Image src={BgEffect1} width={700} height={272} />

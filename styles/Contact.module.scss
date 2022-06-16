@@ -54,7 +54,7 @@
             }
             @media screen and (max-width: 768px) {
                 text-align: center;
-                margin-right: 3em;
+                margin-right: 1em;
             }
         }
 
@@ -82,7 +82,7 @@
             cursor: pointer;
 
             @media screen and (max-width: 1024px) {
-                padding: 0.4em 0.4em 0.3em 0.4em;
+                padding: 0.4em 0.5em 0.3em 0.5em;
             }
 
             * {
@@ -97,7 +97,7 @@
 
             &:hover {
                 color: #ffffffee;
-                background-color: #ffffff0e;
+                background-color: #ffffff1a;
                 border: 1px #ffffff66 solid;
                 transition: all 0.3s ease-in-out;
             }
@@ -140,6 +140,11 @@
             outline: 1px #ffffff88 solid;
         }
     }
+    input {
+        @media screen and (max-width: 560px) {
+            margin-bottom: 2.5em;
+        }
+    }
     textarea {
         resize: vertical;
         min-height: 80px;
@@ -176,7 +181,7 @@
 
         &:hover {
             border: 1px #ffffff77 solid;
-            background-color:#ffffff2f;
+            background-color:#ffffff25;
             transition: all 0.3s;
         }
     }

@@ -334,15 +334,51 @@ img {
 }
 
 .blob {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 65%;
   height: 65%;
   z-index: -1;
-  filter: blur(40px);
-  opacity: 5%
+  filter: blur(100px);
+  opacity: 5%;
+
+  @media screen and (max-width: 1360px) {
+    filter: blur(70px);
+  }
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+    height: 75%;
+    opacity: 7%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    height: 85%;
+    opacity: 10%;
+    filter: blur(50px);
+  }
+  @media screen and (max-width: 560px) {
+    width: 100%;
+    height: 100%;
+    opacity: 12%;
+  }
+}
+
+.blob-landing {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(100px);
+  opacity: 12%;
+
+  @media screen and (min-width: 561px) {
+    display: none
+  }
 }
 
 .circle {
@@ -363,6 +399,10 @@ img {
   animation: pulse2 5s infinite;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.67,0,.34,.98);
+
+  @media screen and (max-width: 560px) {
+    display: none;
+  }
 }
 
 .bg-effect1 {

@@ -9,6 +9,10 @@
   border-radius: 40px;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 560px) {
+    background: transparent;
+  }
 }
 
 .title {
@@ -131,9 +135,6 @@
   from { transform: translateX(-50.5%); }
   to { transform: translateX(0%); }
 }
-
-
-
 
 .about {
   min-height: 100vh;

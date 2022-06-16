@@ -1,6 +1,17 @@
-export default function Blob() {
+import { useEffect, useState } from "react"
+
+export default function Blob(props) {
+
+    const [blobClass , setBlobClass] = useState("blob")
+
+    useEffect(() => {
+        if (props.landing) {
+            setBlobClass("blob-landing")
+        }
+    }, [])
+
     return(
-        <div className="blob">
+        <div className={blobClass}>
             <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                 <g transform="translate(142.51429748535156, 0.7323570251464844)">
                 <defs>
