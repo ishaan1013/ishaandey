@@ -12,6 +12,10 @@ import nutritionDisplay1 from '../../assets/nutrition1.png'
 import nutritionDisplay2 from '../../assets/nutrition3.png'
 import nutritionDisplay3 from '../../assets/nutrition2.png'
 
+import personalSiteDisplay1 from '../../assets/personalSite1.png'
+import personalSiteDisplay2 from '../../assets/personalSite3.png'
+import personalSiteDisplay3 from '../../assets/personalSite2.png'
+
 import styles from "../../styles/Projects.module.scss"
 
 const data = {
@@ -79,17 +83,17 @@ const data = {
     personalSiteData: {
         type: "site",
         class: styles.personalSiteDisplay,
-        img1: ohseaDisplay1,
-        img2: ohseaDisplay2,
-        img3: ohseaDisplay3,
+        img1: personalSiteDisplay1,
+        img2: personalSiteDisplay2,
+        img3: personalSiteDisplay3,
         alt1: "personal site 1",
         alt2: "personal site 2",
         alt3: "",
 
         title: "Personal Site",
         longTitle: "My Personal Website",
-        desc1: "description",
-        desc2: "",
+        desc1: "A site to learn all about me and my projects.",
+        desc2: "Developed on Next.js and React using TailwindCSS. Designed with Figma. Deployed with Vercel. Went through more design iterations that I'd like to admit.",
         desc3: "",
 
         tool1: "React",
@@ -117,9 +121,9 @@ const data = {
 
         title: "Nutrition App",
         longTitle: "Nutrition Tracker App",
-        desc1: "description!!!!!.",
-        desc2: "Nutrition.",
-        desc3: "",
+        desc1: "A complex web app that allows users to track their daily nutrition intake and weight goals. Stores user account data in a JSON database. Allows temporary, anonymous logins for easy access.",
+        desc2: "Original personal project - no tutorials or pre-built UI components. Uses context API, Firebase Realtime Database, and Firebase Authentication.",
+        desc3: "Not completely finished, but functional. Developed on Next.js and React using TailwindCSS. Designed with Figma. Deployed with Vercel.",
 
         tool1: "React",
         tool2: "Next.js",

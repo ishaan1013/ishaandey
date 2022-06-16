@@ -122,9 +122,10 @@
         line-height: 2em;
         letter-spacing: 0.01rem;
         font-weight: 300;
+        font-size: 0.95rem;
         
         @media (max-width: 1536px) {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
     }
 }
