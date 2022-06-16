@@ -79,7 +79,7 @@ export default function Projects() {
                                 setContent={setContent}
                             />
                         </div>
-                        <div className={`${styles.gridItem} ${styles.gI3}`}>
+                        <div className={`${styles.gridItem} ${styles.gI2}`}>
                             <ProjectItem 
                                 data={data.nutritionData} 
                                 // data={data.personalSiteData} 
@@ -87,9 +87,16 @@ export default function Projects() {
                                 setContent={setContent}
                             />
                         </div>
-                        <div className={`${styles.gridItem} ${styles.gI2}`}>
+                        <div className={`${styles.gridItem} ${styles.gI3}`}>
                             <ProjectItem 
                                 data={data.ohseaData} 
+                                setPopup={setPopup}
+                                setContent={setContent}
+                            />
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI4}`}>
+                            <ProjectItem 
+                                data={data.personalSiteData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />

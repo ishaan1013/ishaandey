@@ -15,7 +15,7 @@ export default function Circle() {
     }
 
     const circleStyle = {
-        opacity: circleOpacity,
+        // opacity: circleOpacity,
         filter: "blur("+circleBlur+"px)",
     }
 
