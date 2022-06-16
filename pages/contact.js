@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useEffect, useRef, useState} from "react"
 import Head from "next/head"
 import Favicon from "../public/favicon.ico"
 
@@ -31,6 +31,15 @@ function validateMessage(value) {
 
 export default function Contact() {
     const form = useRef()
+    const [sent, setSent] = useState(false)
+
+    useEffect(() => {
+        if (sent) {
+            setTimeout(() => {
+                setSent(false)
+             }, 3000)
+        }
+    }, [sent])
 
     return (
         <>
@@ -62,6 +71,7 @@ export default function Contact() {
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500))
                                 // alert(JSON.stringify(values, null, 2))
+                                setSent(true)
                                 emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, values, process.env.NEXT_PUBLIC_PUBLIC_KEY)
                                     .then(function(response) {
                                     // console.log("SUCCESS!"+JSON.stringify(values))
@@ -77,8 +87,8 @@ export default function Contact() {
                             {({ errors, touched, isValidating }) => (
                             <Form>
                                 <div className={styles.inputField}>
-                                    {/* <label htmlFor="email">Email Address</label> */}
-                                    <label htmlFor="email">{process.env.NEXT_PUBLIC_SERVICE_ID}</label>
+                                    <label htmlFor="email">Email Address</label>
+                                    {/* <label htmlFor="email">{process.env.NEXT_PUBLIC_SERVICE_ID}</label> */}
                                     <Field
                                     id="email"
                                     name="email"
@@ -108,6 +118,9 @@ export default function Contact() {
                                     type="submit"
                                     className="btn-fill"
                                 >Send</button>
+                                { sent && 
+                                <div className={styles.success}>Sent successfully!</div>
+                                }
                             </Form>
                             )}
                             </Formik>
