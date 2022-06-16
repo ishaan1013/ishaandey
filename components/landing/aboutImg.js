@@ -7,14 +7,23 @@ import personalPhoto from '../../assets/personalPhoto3.jpg'
 
 export default function AboutImg() {
     const [imgTranslate, setImgTranslate] = useState(100)
-    const biggerThan400 = useMediaPredicate("(min-width: 400px)");
+    const threshold = useMediaPredicate("(max-width: 768px)");
 
     useEffect(() => {
         window.addEventListener("scroll", changeStyle);
     }, []);
+
+    useEffect(() => {
+        if (threshold) {
+            setImgTranslate(-10)
+            window.removeEventListener("scroll", changeStyle);
+        } else {
+            window.addEventListener("scroll", changeStyle);
+        }
+    }, [threshold])
     
     function changeStyle() {
-        setImgTranslate((-130) + window.scrollY/8)
+        setImgTranslate((-130) + window.scrollY/10)
     }
 
     const translateStyle = {
