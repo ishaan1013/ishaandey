@@ -55,15 +55,14 @@ export default function Contact() {
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500));
                                 // alert(JSON.stringify(values, null, 2));
-                                // emailjs.send("service_ni0fe9s", "template_vcg3kmq", values, "pZy5n6T8cMbnB476w")
-                                // emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, values, "pZy5n6T8cMbnB476w")
-                                //     .then(function(response) {
-                                //     console.log('SUCCESS!'+JSON.stringify(values));
-                                //     }, function(error) {
-                                //     console.log('FAILED...', error);
-                                //     });
-                                console.log(process.env.SERVICE_ID)
-                                console.log(process.env.TEMPLATE_ID)
+                                emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, values, process.env.PUBLIC_KEY)
+                                    .then(function(response) {
+                                    // console.log('SUCCESS!'+JSON.stringify(values));
+                                    }, function(error) {
+                                    // console.log('FAILED...', error);
+                                    });
+                                // console.log(process.env.SERVICE_ID)
+                                // console.log(process.env.TEMPLATE_ID)
                             }}
                             validateOnChange={false}
                             validateOnBlur={false}
