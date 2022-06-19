@@ -57,7 +57,10 @@ export default function Contact() {
                             <h1>Talk to me!</h1>
                             <div className={styles.subText}>
                                 <p>Or DM me on Discord:<br className={styles.break}/> <span>@Aero#9241</span></p>
-                                <div className={styles.copyButton}>
+                                <div 
+                                className={styles.copyButton}
+                                onClick={() => navigator.clipboard.writeText("Aero#9241")}
+                                >
                                     <FaRegCopy/>
                                 </div>
                             </div>
