@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import styles from "../styles/Home.module.scss"
 
 import Navbar from "../components/navbar"
-import Blob from "../components/blob"
+// import Blob from "../components/blob"
 // import Circle from "../components/circle"
 import About from "../components/landing/about"
 
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="container">
         
         <main className="main">
-          <Blob className={styles.blobLanding} landing />
+          {/* <Blob className={styles.blobLanding} landing /> */}
 
           <section className={styles.landingContainer} style={contStyle}>
             {/* <div className="bg-effect1">
