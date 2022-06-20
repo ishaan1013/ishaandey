@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Favicon from "../public/favicon.ico"
+import { NextSeo } from "next-seo"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
@@ -7,13 +7,13 @@ import styles from "../styles/Home.module.scss"
 
 import Navbar from "../components/navbar"
 import Blob from "../components/blob"
-import Circle from "../components/circle"
+// import Circle from "../components/circle"
 import About from "../components/landing/about"
 
 import UseAnimations from "react-useanimations"
 import arrowDown from "react-useanimations/lib/arrowDown"
 
-import BgEffect1 from "../assets/bgEffect.svg"
+// import BgEffect1 from "../assets/bgEffect.svg"
 import BgEffect3 from "../assets/bgEffect3.svg"
 import BgEffect4 from "../assets/bgEffect4.svg"
 
@@ -38,9 +38,14 @@ export default function Home() {
 
   return (
     <>
+      <NextSeo
+        title="Home - Ishaan Dey"
+        description="Home page - about me."
+      />
+
       <Head>
         <title>Ishaan Dey</title>
-        <meta name="description" content="Ishaan's personal website." />
+        <meta name="description" content="Hey, I'm Ishaan. Learn more about me here!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

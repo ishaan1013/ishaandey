@@ -43,7 +43,7 @@ export default function About() {
             <div className={styles.abtFlex}>
                 <div className={styles.left}>
                     <div className="bg-effect2">
-                        <Image src={BgEffect} width={900} height={372} />
+                        <Image src={BgEffect} width={900} height={372} alt=""/>
                     </div>
                     <div>
                         Hi, I&apos;m Ishaan! 😄 

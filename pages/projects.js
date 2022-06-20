@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Favicon from "../public/favicon.ico"
+import { NextSeo } from "next-seo"
 import Navbar from "../components/navbar"
 import Circle from "../components/circle"
 import styles from "../styles/Projects.module.scss"
@@ -9,7 +9,6 @@ import Popup from "../components/projects/popup"
 import data from "../components/projects/projectData"
 
 import { useState, useEffect } from "react"
-
 
 export default function Projects() {
     const [popup, setPopup] = useState(false)
@@ -69,6 +68,11 @@ export default function Projects() {
     
     return (
         <>
+            <NextSeo
+                title="Projects - Ishaan Dey"
+                description="Portfolio and projects."
+            />
+
             <Head>
                 <title>Projects</title>
                 <meta name="description" content="Ishaan's projects." />
@@ -109,17 +113,6 @@ export default function Projects() {
                             />
                         </div>
                     </div>
-                    {/* <div className={styles.gridContainer}>
-                        <div className={`${styles.gridItem} ${styles.gI1}`}>
-                            <ProjectItem data={data.taData}/>
-                        </div>
-                        <div className={`${styles.gridItem} ${styles.gI2}`}>
-                            <ProjectItem data={data.ohseaData}/>
-                        </div>
-                        <div className={`${styles.gridItem} ${styles.gI3}`}>
-
-                        </div>
-                    </div> */}
                 </main>
             </div>
             <ShowPopup/>

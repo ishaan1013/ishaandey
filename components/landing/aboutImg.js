@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { useMediaPredicate } from "react-media-hook"
 
 import styles from "../../styles/Home.module.scss"
-import personalPhoto from "../../assets/personalPhoto3.jpg"
+import personalPhoto from "../../assets/personalPhoto.jpg"
 
 export default function AboutImg() {
     const [imgTranslate, setImgTranslate] = useState(100)

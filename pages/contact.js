@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState} from "react"
 import Head from "next/head"
-import Favicon from "../public/favicon.ico"
+import { NextSeo } from "next-seo"
 
 import Navbar from "../components/navbar"
 import Circle from "../components/circle"
@@ -43,6 +43,10 @@ export default function Contact() {
 
     return (
         <>
+            <NextSeo
+                title="Contact - Ishaan Dey"
+                description="Ways to contact me."
+            />
             <Head>
                 <title>Contact</title>
                 <meta name="description" content="Ishaan's contact page." />
@@ -73,16 +77,13 @@ export default function Contact() {
                             }}
                             onSubmit={async (values) => {
                                 await new Promise((r) => setTimeout(r, 500))
-                                // alert(JSON.stringify(values, null, 2))
-                                setSent(true)
+                                
                                 emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, values, process.env.NEXT_PUBLIC_PUBLIC_KEY)
                                     .then(function(response) {
-                                    // console.log("SUCCESS!"+JSON.stringify(values))
+                                        setSent(true)
                                     }, function(error) {
                                     // console.log("FAILED...", error)
                                     })
-                                // console.log(process.env.SERVICE_ID)
-                                // console.log(process.env.TEMPLATE_ID)
                             }}
                             validateOnChange={false}
                             validateOnBlur={false}
@@ -91,7 +92,6 @@ export default function Contact() {
                             <Form>
                                 <div className={styles.inputField}>
                                     <label htmlFor="email">Email Address</label>
-                                    {/* <label htmlFor="email">{process.env.NEXT_PUBLIC_SERVICE_ID}</label> */}
                                     <Field
                                     id="email"
                                     name="email"
