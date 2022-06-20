@@ -18,7 +18,7 @@ export default function Circle(props) {
 
     useEffect(() => {
         if (props.contact) {
-            setCircleStyle({opacity: 0.5, filter: "blur(10px)"})
+            setCircleStyle({opacity: 0.2})
         }
         else {
             setCircleStyle({})      

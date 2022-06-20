@@ -440,9 +440,11 @@ img {
 .bg-effect2 {
   position: absolute;
   z-index: -1;
+  filter: blur(30px);
 
   span {
-    transform: rotate(-15deg);
+    /* transform: rotate(-15deg); */
+    animation: effect2-rotate 60s infinite;
   }
 }
 
@@ -464,5 +466,14 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes effect2-rotate {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(-375deg);
   }
 }
