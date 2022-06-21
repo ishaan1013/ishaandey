@@ -47,9 +47,9 @@ const data = {
         icon1: "Github",
         icon2: "Appstore",
         icon3: "Link",
-        link1: "https://github.com/Teach-Assist-App/frontend2",
+        link1: "https://github.com/teachassistapp/TeachAssist",
         link2: "",
-        link3: "https://teach-assist-app.github.io/",
+        link3: "https://teachassistapp.github.io/",
     },
     ohseaData: {
         type: "site",
