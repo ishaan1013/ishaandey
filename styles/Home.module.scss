@@ -143,19 +143,19 @@
 }
 
 .about {
-  height: 100vh;
+  /* min-height: 100vh; */
   padding: 0;
   margin-top: 100px;
   overflow: hidden;
   @media screen and (max-width: 768px) {
     margin-top: 200px;
-    height: 120vh;
+    /* height: 120vh; */
   }
   @media screen and (max-width: 700px) {
-    height: 115vh;
+    /* height: 115vh; */
   }
   @media screen and (max-width: 450px) {
-    height: 110vh;
+    /* height: 110vh; */
   }
 
   .abtFlex {
@@ -192,6 +192,62 @@
       margin-top: 10px;
     }
 
+    .copyTextMobile {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+      display: flex;
+      justify-content: center;
+      margin-top: -10px;
+
+      p {
+        background: -webkit-linear-gradient(0deg, rgb(90, 176, 111) 0%, rgb(152, 84, 173) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    
+    .socialsMobile {
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+
+      justify-content: center;
+      width: 100%;
+      display: flex;
+
+      .links {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 10px 0;
+      }
+      .link {
+          color: #ffffffcc;
+          padding: 0.8em;
+          margin: 0 0.5em;
+          border: 1px #ffffff44 solid;
+          background-color:#ffffff0a;
+          border-radius: 20px;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          display: flex;
+
+          &:hover {
+              color: #ffffffee;
+              background-color: #ffffff14;
+              border: 1px #ffffff88 solid;
+              transition: all 0.3s ease-in-out;
+          }
+
+          * {
+            width: 30px;  
+            height: 30px;
+          }
+      }
+    }
+
+
+
     div {
       font-size: 1.15rem;
       line-height: 1.5em;
@@ -217,8 +273,7 @@
       height: 100px;
 
       @media screen and (max-width: 768px) {
-        margin-top: 2em;
-        flex-direction: column;
+        display: none;
       }
 
       * {
@@ -243,25 +298,7 @@
           transform: translate(0, 2px);
         }
       }
-      p {
-        text-align: center;
-        span {
-          font-size: 0.8rem;
-          line-height: 1em;
-          font-weight: 400;
-          background: -webkit-linear-gradient(0deg, rgb(90, 176, 111) 0%, rgb(152, 84, 173) 100%);
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        @media screen and (min-width: 769px) {
-          display: none;
-        }
-      }
       div {
-        @media screen and (max-width: 768px) {
-          display: none;
-        }
         position: relative;
         margin: 0;
         .copyText {
