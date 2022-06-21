@@ -186,6 +186,10 @@
         padding: 0.35em 0 0 0;
         width: auto;
         font-size: 0.95rem;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
 
     &:hover {
