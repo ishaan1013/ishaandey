@@ -21,7 +21,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+    overflow: hidden;
     animation: rollout 0.3s ease-in-out;
 
     @media (max-width: 1536px) {
