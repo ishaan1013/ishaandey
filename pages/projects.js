@@ -61,6 +61,14 @@ export default function Projects() {
                     />
                 )
             }
+            if (content == "The Brain Scramble") { 
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.brainscrambleData}
+                    />
+                )
+            }
         }
 
         return null
@@ -108,6 +116,13 @@ export default function Projects() {
                         <div className={`${styles.gridItem} ${styles.gI4}`}>
                             <ProjectItem 
                                 data={data.personalSiteData} 
+                                setPopup={setPopup}
+                                setContent={setContent}
+                            />
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI5}`}>
+                            <ProjectItem 
+                                data={data.brainscrambleData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />

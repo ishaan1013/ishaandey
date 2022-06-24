@@ -16,6 +16,10 @@ import personalSiteDisplay1 from "../../assets/personalSite1.png"
 import personalSiteDisplay2 from "../../assets/personalSite3.png"
 import personalSiteDisplay3 from "../../assets/personalSite2.png"
 
+import brainscrambleDisplay1 from "../../assets/brainscramble1.png"
+import brainscrambleDisplay2 from "../../assets/brainscramble3.png"
+import brainscrambleDisplay3 from "../../assets/brainscramble2.png"
+
 import styles from "../../styles/Projects.module.scss"
 
 const data = {
@@ -40,10 +44,10 @@ const data = {
         desc3: "Designed with Figma, developed with React Native.",
 
         tool1: "React Native",
-        tool2: "Expo",
-        tool3: "Heroku",
-        tool4: "Figma",
-        tool5: "None",
+        tool2: "Python",
+        tool3: "Expo",
+        tool4: "Heroku",
+        tool5: "Figma",
         icon1: "Github",
         icon2: "Appstore",
         icon3: "Link",
@@ -117,7 +121,7 @@ const data = {
         img3: nutritionDisplay3,
         alt1: "nutrition tracker 1",
         alt2: "nutrition tracker 2",
-        alt3: "",
+        alt3: "nutrition tracker 3",
 
         title: "Nutrition App",
         longTitle: "Nutrition Tracker App",
@@ -136,6 +140,35 @@ const data = {
         icon3: "None",
         link1: "https://github.com/ishaan1013/nutrition",
         link2: "https://nutrition-ishaan1013.vercel.app/",
+        link3: "",
+    },
+    brainscrambleData: {
+        type: "site",
+        class: styles.brainscrambleDisplay,
+        img1: brainscrambleDisplay1,
+        img2: brainscrambleDisplay2,
+        img3: brainscrambleDisplay3,
+        alt1: "brainscramble 1",
+        alt2: "brainscramble 2",
+        alt3: "brainscramble 3",
+
+        title: "The Brain Scramble",
+        longTitle: "The Brain Scramble Magazine",
+        desc1: "An modern online magazine, regularly updated with monthly issues from a wide range of authors.",
+        desc2: "Built with Wordpress & several plugins.",
+        desc3: "",
+
+        tool1: "Wordpress",
+        tool2: "None",
+        tool3: "None",
+        tool4: "None",
+        tool5: "None",
+
+        icon1: "Link",
+        icon2: "None",
+        icon3: "None",
+        link1: "https://thebrainscramble.com",
+        link2: "",
         link3: "",
     },
 }
