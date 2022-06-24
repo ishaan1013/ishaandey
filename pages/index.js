@@ -129,6 +129,7 @@ export default function Home() {
               <div className={styles.graphic}>
                 <Image src={TAGraphic}/>
               </div>
+              <div className={styles.glow}/>
             </div>
             
 

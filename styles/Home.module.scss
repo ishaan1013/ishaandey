@@ -209,6 +209,18 @@
     position: absolute;
     right: -50px;
     bottom: -120px;
+    z-index: 1;
+  }
+  .glow {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 220px;
+    height: 220px;
+    background-color: #60AA5A;
+
+    filter: blur(180px);
+    /* opacity: 0.5; */
   }
 }
 

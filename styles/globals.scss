@@ -484,11 +484,11 @@ img {
 .bg-effect2 {
   position: absolute;
   z-index: -1;
-  filter: blur(30px);
+  filter: blur(50px);
 
   span {
-    /* transform: rotate(-15deg); */
-    animation: effect2-rotate 60s infinite;
+    transform: rotate(-15deg);
+    /* animation: effect2-rotate 60s infinite; */
   }
 }
 
@@ -513,11 +513,11 @@ img {
   }
 }
 
-@keyframes effect2-rotate {
+/* @keyframes effect2-rotate {
   from {
     transform: rotate(-15deg);
   }
   to {
     transform: rotate(-375deg);
   }
-}
+} */
