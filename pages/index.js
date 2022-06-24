@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { NextSeo } from "next-seo"
 import Image from "next/image"
 import { useState, useEffect } from "react"
@@ -15,7 +16,7 @@ import About from "../components/landing/about"
 
 import { MdInsertChartOutlined, MdOutlinePeopleAlt, MdCode } from "react-icons/md"
 
-
+import TAGraphic from "../assets/tagraphic.png"
 // import BgEffect1 from "../assets/bgEffect.svg"
 // import BgEffect3 from "../assets/bgEffect3.svg"
 // import BgEffect4 from "../assets/bgEffect4.svg"
@@ -118,9 +119,18 @@ export default function Home() {
                     <p>Built with JavaScript React Native for both iOS and Android.</p>
                   </div>
                 </div>
+                <Link 
+                href="/projects"
+                >
+                  Go To Projects
+                </Link>
+              </div>
 
+              <div className={styles.graphic}>
+                <Image src={TAGraphic}/>
               </div>
             </div>
+            
 
           </section>
         </main>
