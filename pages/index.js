@@ -81,9 +81,12 @@ export default function Home() {
 
 
             <h1 className={styles.title}>
-              <span className={styles.name1}>ISHAAN</span>
-              &nbsp;
-              <span className={styles.name2}>DEY</span>
+              <span className={styles.name1}>
+                <span style={{"letter-spacing": "-0.02em"}}>I</span><span style={{"letter-spacing": "-0.02em"}}>S</span>H<span style={{"letter-spacing": "0.03em"}}>A</span>AN
+              </span>
+              <span className={styles.name2}>
+                <span style={{"letter-spacing": "-0.02em"}}>D</span><span style={{"letter-spacing": "0.05em"}}>E</span>Y
+              </span>
             </h1>
             <h3 className={styles.subtitle}>Full-Stack Developer &amp; High School Student</h3>
 
