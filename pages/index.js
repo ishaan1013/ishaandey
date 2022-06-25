@@ -130,7 +130,7 @@ export default function Home() {
               </div>
 
               <div className={styles.graphic}>
-                <Image src={TAGraphic}/>
+                <Image src={TAGraphic} alt="Feature Image"/>
               </div>
               <div className={styles.glow}/>
             </div>
