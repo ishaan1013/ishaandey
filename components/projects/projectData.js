@@ -129,8 +129,8 @@ const data = {
 
         title: "Blockchain Exchange",
         longTitle: "Blockchain Exchange App",
-        desc1: "",
-        desc2: "",
+        desc1: "A full-stack web app allowing users to connect a Metamask wallet, make cryptocurrency transactions, and view previous transactions on the blockchain.",
+        desc2: "Frontend developed with React-Typescript on Vite with TailwindCSS. Backend developed with Solidity on Hardhat and Ethers.",
         desc3: "",
 
         tool1: "React-TS",
