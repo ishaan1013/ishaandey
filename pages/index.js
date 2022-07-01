@@ -17,6 +17,7 @@ import About from "../components/landing/about"
 import { MdInsertChartOutlined, MdOutlinePeopleAlt, MdCode } from "react-icons/md"
 
 import TAGraphic from "../assets/tagraphic.png"
+import Gradient from "../assets/gradient.png"
 // import BgEffect1 from "../assets/bgEffect.svg"
 // import BgEffect3 from "../assets/bgEffect3.svg"
 // import BgEffect4 from "../assets/bgEffect4.svg"
@@ -57,7 +58,9 @@ export default function Home() {
 
         
       <div className="container">
-        
+        <div className="bg-gradient-container">
+          <Image src={Gradient} alt=""/>
+        </div>
         <main className={styles.main}>
           {/* <Blob className={styles.blobLanding} landing /> */}
 

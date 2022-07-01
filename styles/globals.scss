@@ -268,7 +268,7 @@ img {
   // background-color: #0e0e0e44;
   /* background-color: transparent; */
   backdrop-filter: blur(15px);
-  z-index: 1;
+  z-index: 10;
 
   ul {
     padding: 0;
@@ -359,6 +359,15 @@ img {
       }
     }
   }
+}
+
+.bg-gradient-container {
+  position: absolute;
+  top: -200px;
+  left: calc((1920px - 100vw) / -2);
+  width: 1920px;
+  /* height: 100vh; */
+  z-index: -10;
 }
 
 .circle {

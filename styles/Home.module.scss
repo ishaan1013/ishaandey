@@ -120,7 +120,7 @@
   text-align: center;
   font-weight: 400;
   font-size: 1.2rem;
-  margin: 5px 0 25vh 0;
+  margin: 5px 0 20vh 0;
 
   animation: appear1 3s cubic-bezier(.04,.56,.26,.99);
 
@@ -331,16 +331,16 @@
 }
 
 .about {
-  padding: 0;
+  padding: 150px 0;
   margin-top: 100px;
   overflow: hidden;
   @media screen and (max-width: 768px) {
     margin-top: 200px;
+    padding: 80px 0;
   }
 
   .abtFlex {
     display: flex;
-    min-height: 100vh;
     justify-content: space-between;
     
     @media screen and (max-width: 768px) {
