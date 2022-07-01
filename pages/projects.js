@@ -69,6 +69,14 @@ export default function Projects() {
                     />
                 )
             }
+            if (content == "Blockchain Exchange") { 
+                return (
+                    <Popup
+                        setPopup={setPopup}
+                        data={data.exchangeData}
+                    />
+                )
+            }
         }
 
         return null
@@ -100,27 +108,34 @@ export default function Projects() {
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI2}`}>
                             <ProjectItem 
-                                data={data.nutritionData} 
-                                // data={data.personalSiteData} 
+                                data={data.exchangeData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI3}`}>
                             <ProjectItem 
-                                data={data.ohseaData} 
+                                data={data.nutritionData} 
+                                // data={data.personalSiteData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI4}`}>
                             <ProjectItem 
-                                data={data.personalSiteData} 
+                                data={data.ohseaData} 
                                 setPopup={setPopup}
                                 setContent={setContent}
                             />
                         </div>
                         <div className={`${styles.gridItem} ${styles.gI5}`}>
+                            <ProjectItem 
+                                data={data.personalSiteData} 
+                                setPopup={setPopup}
+                                setContent={setContent}
+                            />
+                        </div>
+                        <div className={`${styles.gridItem} ${styles.gI6}`}>
                             <ProjectItem 
                                 data={data.brainscrambleData} 
                                 setPopup={setPopup}

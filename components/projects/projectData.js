@@ -20,6 +20,10 @@ import brainscrambleDisplay1 from "../../assets/brainscramble1.png"
 import brainscrambleDisplay2 from "../../assets/brainscramble3.png"
 import brainscrambleDisplay3 from "../../assets/brainscramble2.png"
 
+import exchangeDisplay1 from "../../assets/exchange1.png"
+import exchangeDisplay2 from "../../assets/exchange3.png"
+import exchangeDisplay3 from "../../assets/exchange2.png"
+
 import styles from "../../styles/Projects.module.scss"
 
 const data = {
@@ -111,6 +115,35 @@ const data = {
         icon3: "None",
         link1: "https://github.com/ishaan1013/ishaandey",
         link2: "http://ishaandey.live/",
+        link3: "",
+    },
+    exchangeData: {
+        type: "site",
+        class: styles.exchangeDisplay,
+        img1: exchangeDisplay1,
+        img2: exchangeDisplay2,
+        img3: exchangeDisplay3,
+        alt1: "blockchain exchange 1",
+        alt2: "blockchain exchange 2",
+        alt3: "",
+
+        title: "Blockchain Exchange",
+        longTitle: "Blockchain Exchange App",
+        desc1: "",
+        desc2: "",
+        desc3: "",
+
+        tool1: "React-TS",
+        tool2: "Solidity",
+        tool3: "Vite",
+        tool4: "Hardhat",
+        tool5: "TailwindCSS",
+
+        icon1: "Github",
+        icon2: "Link",
+        icon3: "None",
+        link1: "https://github.com/ishaan1013/sol-basics",
+        link2: "https://sol-basics.vercel.app/",
         link3: "",
     },
     nutritionData: {
