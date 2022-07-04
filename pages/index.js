@@ -109,15 +109,11 @@ export default function Home() {
                 <div className={styles.featureDetailWrapper}>
                   <div className={styles.featureDetail}>
                     <MdInsertChartOutlined className={styles.featureIcon} />
-                    <p>Top 100 education app on Apple App Store official charts.</p>
-                  </div>
-                  <div className={styles.featureDetail}>
-                    <MdOutlinePeopleAlt className={styles.featureIcon} />
-                    <p>400+ downloads. 3000+ reached.</p>
+                    <p>Top 100 education app on Apple App Store official charts. 500+ downloads.</p>
                   </div>
                   <div className={styles.featureDetail}>
                     <MdCode className={styles.featureIcon} />
-                    <p>Built with JavaScript React Native for both iOS and Android.</p>
+                    <p>Built with React Native for both iOS &amp; Android. Backend &amp; APIs written in Python.</p>
                   </div>
                 </div>
                 <Link 
