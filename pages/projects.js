@@ -97,7 +97,7 @@ export default function Projects() {
             <Navbar/>
             <div className="container">
                 <main className={mainClass}>
-                    <Circle/>
+                    {/* <Circle/> */}
                     <div className={gridClass}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
                             <ProjectItem 

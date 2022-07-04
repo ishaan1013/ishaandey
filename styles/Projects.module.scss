@@ -25,7 +25,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 30px;
     width: 1200px;
     // height: 600px;
     margin-bottom: 50px;
@@ -83,7 +83,7 @@
 .gridContainerNoScroll {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 30px;
     width: 1200px;
     // height: 600px;
     margin-bottom: 0px;
@@ -142,12 +142,12 @@
 .gridItem {
     padding: 40px 0;
     backdrop-filter: blur(40px);
-    border-radius: 60px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px #ffffff55 solid;
+    border: 1px #ffffff22 solid;
     .appDisplayItem {
         position: absolute;
         transform: skew(0deg, 0deg);
