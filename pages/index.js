@@ -2,12 +2,10 @@ import Head from "next/head"
 import Link from "next/link"
 import { NextSeo } from "next-seo"
 import Image from "next/image"
-import { useState, useEffect } from "react"
 
 import styles from "../styles/Home.module.scss"
 
 import Navbar from "../components/navbar"
-// import Blob from "../components/blob"
 // import Circle from "../components/circle"
 import About from "../components/landing/about"
 
@@ -17,10 +15,6 @@ import About from "../components/landing/about"
 import { MdInsertChartOutlined, MdOutlinePeopleAlt, MdCode } from "react-icons/md"
 
 import TAGraphic from "../assets/tagraphic.png"
-import Gradient from "../assets/gradient.png"
-// import BgEffect1 from "../assets/bgEffect.svg"
-// import BgEffect3 from "../assets/bgEffect3.svg"
-// import BgEffect4 from "../assets/bgEffect4.svg"
 
 export default function Home() {
 
@@ -56,15 +50,14 @@ export default function Home() {
 
       <Navbar/>
 
-        
-      <div className="container">
-        <div className="bg-gradient-container">
-          <Image src={Gradient} alt=""/>
-        </div>
-        <main className={styles.main}>
-          {/* <Blob className={styles.blobLanding} landing /> */}
+      {/* duplicate for more grain */}
+      <div className="bg-grain"/>
+      <div className="bg-grain"/>
 
-          {/* <section className={styles.landingContainer} style={contStyle}> */}
+      <div className="bg-gradient"/>
+      <div className="container">
+        <main className={styles.main}>
+
           <section className={styles.landingSection}>
 
             {/* <div className="bg-effect1">
@@ -91,7 +84,9 @@ export default function Home() {
                 <span style={{"letterSpacing": "-0.02em"}}>D</span><span style={{"letterSpacing": "0.05em"}}>E</span>Y
               </span>
             </h1>
-            <h3 className={styles.subtitle}>Full-Stack Developer &amp; High School Student</h3>
+            <h3 className={styles.subtitle}>
+              Full-Stack Developer &amp; High School Student
+            </h3>
 
             {/* <SwitchSubtitle/> */}
 
