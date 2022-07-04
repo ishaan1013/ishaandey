@@ -379,46 +379,13 @@ img {
   width: 100vw;
   height: 100vh;
   filter: blur(6px);
+  animation: appear2 3s ease-in;
   background: conic-gradient( from 180deg,
     #0e0e0e14 80deg, #121e5b 95deg, #066482 110deg, 
     #5acfe8 135deg, #efc249 160deg, #df6042 206deg, 
     #b246ae 230deg, #121e5b 265deg, #0e0e0e14 280deg);
 }
 
-/* .bg-gradient-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -10;
-  animation: appear2 3s ease-in;
-} */
-
-.bg-gradient-container1 {
-  position: absolute;
-  top: calc((360px - 30vw));
-  z-index: -10;
-  animation: appear2 3s ease-in;
-
-  @media screen and (max-width: 1214px) {
-    display: none;
-  }
-}
-
-.bg-gradient-container2 {
-  position: absolute;
-  left: 0;
-  top: calc((250px - 36vw));
-  z-index: -10;
-  animation: appear2 3s ease-in;
-
-  @media screen and (min-width: 1215px) {
-    display: none;
-  }
-
-  /* @media screen and (min-width: 1215px) {
-    display: none;
-  } */
-}
 
 @keyframes appear2 {
   0% {
