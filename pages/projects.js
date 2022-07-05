@@ -1,12 +1,14 @@
 import Head from "next/head"
 import { NextSeo } from "next-seo"
 import Navbar from "../components/navbar"
-import Circle from "../components/circle"
+// import Circle from "../components/circle"
 import styles from "../styles/Projects.module.scss"
 
 import ProjectItem from "../components/projects/projectItem"
 import Popup from "../components/projects/popup"
 import data from "../components/projects/projectData"
+
+import { IoLogoGithub } from "react-icons/io5"
 
 import { useState, useEffect } from "react"
 
@@ -97,6 +99,16 @@ export default function Projects() {
             <Navbar/>
             <div className="container">
                 <main className={mainClass}>
+                    <p className={styles.disclaimer}>
+                        Select projects are featured here.
+                    </p>
+                    <a 
+                    href="https://github.com/ishaan1013" 
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.ghLink}>
+                        <IoLogoGithub/>See everything on GitHub!
+                    </a>
                     {/* <Circle/> */}
                     <div className={gridClass}>
                         <div className={`${styles.gridItem} ${styles.gI1}`}>
