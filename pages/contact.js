@@ -3,13 +3,15 @@ import Head from "next/head"
 import { NextSeo } from "next-seo"
 
 import Navbar from "../components/navbar"
-import Circle from "../components/circle"
+// import Circle from "../components/circle"
 import styles from "../styles/Contact.module.scss"
 
 import emailjs from "@emailjs/browser"
 import { Formik, Form, Field } from "formik"
 import { RiErrorWarningLine } from "react-icons/ri"
 import { FaRegCopy } from "react-icons/fa"
+import FormBg1 from "../components/contact/formBg1"
+import FormBg2 from "../components/contact/formBg2"
 
 function validateEmail(value) {
     let error
@@ -53,9 +55,10 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar/>
+            <FormBg1 />
             <div className="container">
                 <main className="main">
-                    <Circle contact/>
+                    {/* <Circle contact/> */}
                     <div className={styles.wrapper}>
                         <section className={styles.text}>
                             <h1>Talk to me!</h1>
@@ -70,6 +73,7 @@ export default function Contact() {
                             </div>
                         </section>
                         <section className={styles.formContainer}>
+                            <FormBg2 />
                             <Formik
                             initialValues={{
                                 email: "",
