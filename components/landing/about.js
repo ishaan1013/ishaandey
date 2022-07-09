@@ -45,9 +45,9 @@ export default function About() {
         <section className={styles.about}>
             <div className={styles.abtFlex}>
                 <div className={styles.left}>
-                    <div className="bg-effect2">
+                    {/* <div className="bg-effect2">
                         <Image src={BgEffect} width={900} height={372} alt=""/>
-                    </div>
+                    </div> */}
                     <div>
                         Hi, I&apos;m Ishaan! 😄 
                     </div>
