@@ -54,21 +54,6 @@ export default function Home() {
 
           <section className={styles.landingSection}>
 
-            {/* <div className="bg-effect1">
-              <Image src={BgEffect1} width={700} height={272} />
-            </div> */}
-
-            {/* <div className="landing-blobs-wrapper">
-              <div className="bg-effect3">
-                <Image src={BgEffect3} width={1000} height={1000} alt="" />
-              </div>
-              <div className="bg-effect4">
-                <Image src={BgEffect4} width={1000} height={1000} alt="" />
-              </div>
-            </div> */}
-
-            {/* <Circle/> */}
-
 
             <h1 className={styles.title}>
               <span className={styles.name1}>

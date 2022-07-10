@@ -2,7 +2,7 @@
 import AboutImg from "./aboutImg"
 import styles from "../../styles/Home.module.scss"
 import { useState } from "react"
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal"
 
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5"
 import { FaDiscord } from "react-icons/fa"
