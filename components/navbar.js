@@ -9,7 +9,7 @@ export default function Navbar() {
 
     const scroll = () => {
         window.scroll({
-            top: 10000,
+            top: 30000,
             behavior: "smooth"
         })
     }
